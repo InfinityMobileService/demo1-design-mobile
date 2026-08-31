@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>งวดผ่อน — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<!--
+THESIS: แอปหนี้ที่อ่านออกกลางแดดในแวบเดียว — มาตรฐานแอปการเงินไทยที่ทำให้เนี้ยบระดับ KPLUS/Revolut ปฏิเสธการ์ดเงาซ้อนการ์ดและลูกเล่นที่ทำให้ตัวเลขอ่านช้าลง
+OWN-WORLD: พื้นเทา #F1F2F5 การ์ดขาวเงาบาง เส้น 1px ทอง #D2A32C เป็น accent เดียวของระบบ แดง/เขียวสงวนไว้สื่อสถานะเท่านั้น Prompt ตัวเลข tabular ปุ่มสูง 52px มุม 14-18px
+STORY: ลูกค้าที่ค้างงวดเปิดแอป เห็นยอด ฿3,400 กับวันครบกำหนดก่อนอย่างอื่น เข้าใจว่าค่าติดตาม ฿200 มาจากไหน แล้วกดจ่ายหรือแจ้งสลิปได้ใน 1 แตะ
+FIRST VIEWPORT: แถบสถานะค้างชำระหนึ่งบรรทัด แล้วแผงยอดขาวเต็มความกว้าง ยอด ฿3,400 ที่ 34px คือตัวใหญ่ที่สุดในหน้า ใต้ยอดเป็นแถบ 12 ขีดของ 12 งวด ปิดท้ายด้วยปุ่มชำระเงินคู่แจ้งสลิป
+FORM: canon (มาตรฐานหมวด ผู้ใช้เลือกเอง) นอกลิสต์ผู้สมัครทั้ง 7 · seed 402bb3ea
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<div class="app">
+<script>window.PAGE = { title: "งวดผ่อน", back: "home.html" };</script>
+<script src="assets/layout.js"></script>
+<div class="screen">
+
+  <a class="notice" href="collection-detail.html">
+    <i data-lucide="circle-alert"></i>
+    <span class="flex-1">ค้างชำระเกินกำหนด 26 วัน · ระยะที่ 1</span>
+    <i data-lucide="chevron-right"></i>
+  </a>
+
+  <div class="balance mt-12">
+    <div class="row-between">
+      <div class="label">ยอดที่ต้องชำระตอนนี้</div>
+      <span class="badge badge-danger">เกินกำหนด 26 วัน</span>
+    </div>
+    <div class="amount-xl"><span class="baht">฿</span>3,400</div>
+    <div class="meta">งวดที่ 5 / 12 · ครบกำหนด 25 ก.ค. 2568</div>
+
+    <div class="ticks mt-16" role="img" aria-label="ชำระแล้ว 4 งวด ค้าง 1 งวด งวดถัดไป 1 งวด เหลืออีก 6 งวด จากทั้งหมด 12 งวด">
+      <span class="tick paid"></span>
+      <span class="tick paid"></span>
+      <span class="tick paid"></span>
+      <span class="tick paid"></span>
+      <span class="tick overdue"></span>
+      <span class="tick due"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+    </div>
+    <div class="row-between sub mt-8">
+      <span>ผ่อนแล้ว 4 / 12 งวด</span>
+      <span>คงเหลือ ฿25,600</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="kv">
+      <span class="k">ค่างวด</span>
+      <span class="v">฿3,200</span>
+    </div>
+    <div class="kv">
+      <span class="k">ค่าติดตามทวงถาม</span>
+      <span class="v">฿200</span>
+    </div>
+
+
+    <a class="btn btn-primary btn-block mt-16" href="pay-methods.html">
+      <i data-lucide="wallet"></i> ชำระยอดค้าง
+    </a>
+  </div>
+
+  <div class="alert alert-info mt-12">
+    <i data-lucide="clock"></i>
+    <div>สลิปที่แจ้งเมื่อ 19 ส.ค. 2568 14:22 · ฿3,400 อยู่ระหว่างตรวจสอบ <a href="slip-status.html">ดูสถานะ</a></div>
+  </div>
+
+  <div class="section-title">
+    ตารางผ่อน 12 งวด
+    <span>LN-2568-0417</span>
+  </div>
+  <div class="list">
+    <div class="list-item">
+      <span class="list-ico g"><i data-lucide="check"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 1</div>
+        <div class="desc">จ่ายแล้ว 25 มี.ค. 2568</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm">฿3,200</div>
+        <div class="desc t-success">จ่ายแล้ว</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico g"><i data-lucide="check"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 2</div>
+        <div class="desc">จ่ายแล้ว 25 เม.ย. 2568</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm">฿3,200</div>
+        <div class="desc t-success">จ่ายแล้ว</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico g"><i data-lucide="check"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 3</div>
+        <div class="desc">จ่ายแล้ว 25 พ.ค. 2568</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm">฿3,200</div>
+        <div class="desc t-success">จ่ายแล้ว</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico g"><i data-lucide="check"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 4</div>
+        <div class="desc">จ่ายแล้ว 25 มิ.ย. 2568</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm">฿3,200</div>
+        <div class="desc t-success">จ่ายแล้ว</div>
+      </div>
+    </div>
+    <a class="list-item" href="pay-methods.html">
+      <span class="list-ico r"><i data-lucide="circle-alert"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 5</div>
+        <div class="desc">ครบกำหนด 25 ก.ค. 2568 · ค่างวด ฿3,200 + ค่าติดตาม ฿200</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm t-danger">฿3,400</div>
+        <div class="desc t-danger">เกินกำหนด 26 วัน</div>
+      </div>
+      <i data-lucide="chevron-right" class="chev"></i>
+    </a>
+    <div class="list-item">
+      <span class="list-ico y"><i data-lucide="calendar-clock"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 6</div>
+        <div class="desc">ครบกำหนด 25 ส.ค. 2568 · เหลืออีก 5 วัน</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm">฿3,200</div>
+        <div class="desc t-warning">อีก 5 วัน</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico n"><i data-lucide="clock"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 7</div>
+        <div class="desc">ครบกำหนด 25 ก.ย. 2568</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm muted">฿3,200</div>
+        <div class="desc">รอชำระ</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico n"><i data-lucide="clock"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 8</div>
+        <div class="desc">ครบกำหนด 25 ต.ค. 2568</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm muted">฿3,200</div>
+        <div class="desc">รอชำระ</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico n"><i data-lucide="clock"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 9</div>
+        <div class="desc">ครบกำหนด 25 พ.ย. 2568</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm muted">฿3,200</div>
+        <div class="desc">รอชำระ</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico n"><i data-lucide="clock"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 10</div>
+        <div class="desc">ครบกำหนด 25 ธ.ค. 2568</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm muted">฿3,200</div>
+        <div class="desc">รอชำระ</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico n"><i data-lucide="clock"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 11</div>
+        <div class="desc">ครบกำหนด 25 ม.ค. 2569</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm muted">฿3,200</div>
+        <div class="desc">รอชำระ</div>
+      </div>
+    </div>
+    <div class="list-item">
+      <span class="list-ico n"><i data-lucide="clock"></i></span>
+      <div class="body">
+        <div class="title">งวดที่ 12</div>
+        <div class="desc">ครบกำหนด 25 ก.พ. 2569</div>
+      </div>
+      <div class="trail">
+        <div class="amount-sm muted">฿3,200</div>
+        <div class="desc">รอชำระ</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>

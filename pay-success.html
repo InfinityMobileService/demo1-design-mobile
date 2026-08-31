@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ชำระสำเร็จ — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<!--
+THESIS: แอปหนี้ที่อ่านออกกลางแดดในแวบเดียว — มาตรฐานแอปการเงินไทยที่ทำให้เนี้ยบระดับ KPLUS/Revolut ปฏิเสธการ์ดเงาซ้อนการ์ดและลูกเล่นที่ทำให้ตัวเลขอ่านช้าลง
+OWN-WORLD: พื้นเทา #F1F2F5 การ์ดขาวเงาบาง เส้น 1px ทอง #D2A32C เป็น accent เดียวของระบบ แดง/เขียวสงวนไว้สื่อสถานะเท่านั้น Prompt ตัวเลข tabular ปุ่มสูง 52px มุม 14-18px
+STORY: ลูกค้าที่ค้างงวดเปิดแอป เห็นยอด ฿3,400 กับวันครบกำหนดก่อนอย่างอื่น เข้าใจว่าค่าติดตาม ฿200 มาจากไหน แล้วกดจ่ายหรือแจ้งสลิปได้ใน 1 แตะ
+FIRST VIEWPORT: แถบสถานะค้างชำระหนึ่งบรรทัด แล้วแผงยอดขาวเต็มความกว้าง ยอด ฿3,400 ที่ 34px คือตัวใหญ่ที่สุดในหน้า ใต้ยอดเป็นแถบ 12 ขีดของ 12 งวด ปิดท้ายด้วยปุ่มชำระเงินคู่แจ้งสลิป
+FORM: canon (มาตรฐานหมวด ผู้ใช้เลือกเอง) นอกลิสต์ผู้สมัครทั้ง 7 · seed 402bb3ea
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<div class="app">
+<script>window.PAGE = { title: "ชำระสำเร็จ", bare: true };</script>
+<script src="assets/layout.js"></script>
+<div class="screen">
+
+  <div class="balance">
+    <div class="text-center">
+      <span class="list-ico g"><i data-lucide="check"></i></span>
+      <div class="h1 mt-16">ชำระเงินสำเร็จ</div>
+      <div class="meta">งวดที่ 5 · 20 ส.ค. 2568 · 14:32 น.</div>
+      <div class="amount-xl mt-12">฿3,400</div>
+      <div class="mt-12">
+        <span class="badge badge-success">พร้อมเพย์ QR</span>
+        <span class="badge badge-success">พ้นระยะทวงถาม</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">ใบเสร็จรับเงิน</div>
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">อิเล็กทรอนิกส์</div>
+      <span class="badge">MBH-680820-0417-05</span>
+    </div>
+    <div class="kv">
+      <span class="k">เลขรายการ</span>
+      <span class="v">TXN256808201432884</span>
+    </div>
+    <div class="kv">
+      <span class="k">สัญญา</span>
+      <span class="v">LN-2568-0417</span>
+    </div>
+    <div class="kv">
+      <span class="k">ผู้ชำระ</span>
+      <span class="v">นายสมชาย ใจดี</span>
+    </div>
+    <div class="kv">
+      <span class="k">เครื่อง</span>
+      <span class="v">iPhone 15 128GB สีดำ</span>
+    </div>
+    <div class="kv">
+      <span class="k">ช่องทาง</span>
+      <span class="v">พร้อมเพย์ QR</span>
+    </div>
+    <div class="kv">
+      <span class="k">รับโอนโดย</span>
+      <span class="v">บจก. บ้านมือถือ โมบายโฮม</span>
+    </div>
+    <div class="kv">
+      <span class="k">วันเวลา</span>
+      <span class="v">20 ส.ค. 2568 14:32 น.</span>
+    </div>
+    <div class="kv">
+      <span class="k">ค่างวดที่ 5</span>
+      <span class="v"><span class="baht">฿</span>3,200</span>
+    </div>
+    <div class="kv">
+      <span class="k">ค่าติดตามทวงถาม (ระยะที่ 1)</span>
+      <span class="v"><span class="baht">฿</span>200</span>
+    </div>
+    <div class="kv">
+      <span class="k">ค่าธรรมเนียม</span>
+      <span class="v t-success">฿0</span>
+    </div>
+    <div class="kv total">
+      <span class="k">รวมที่ชำระ</span>
+      <span class="v"><span class="baht">฿</span>3,400</span>
+    </div>
+  </div>
+
+  <div class="section-title">ยอดหลังชำระงวดที่ 5</div>
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">ความคืบหน้าสัญญา</div>
+      <span class="badge badge-warning">งวดที่ 6 ถัดไป</span>
+    </div>
+    <div class="ticks" role="img" aria-label="ชำระแล้ว 5 งวด งวดถัดไปอีก 1 งวด เหลืออีก 6 งวด จากทั้งหมด 12 งวด">
+      <span class="tick paid"></span>
+      <span class="tick paid"></span>
+      <span class="tick paid"></span>
+      <span class="tick paid"></span>
+      <span class="tick paid"></span>
+      <span class="tick due"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+      <span class="tick"></span>
+    </div>
+    <div class="row-between sub mt-8">
+      <span>ชำระแล้ว 5 / 12 งวด</span>
+      <span>คงเหลือหลังชำระงวดที่ 5 ฿22,400</span>
+    </div>
+    <div class="divider"></div>
+    <div class="kv">
+      <span class="k">ยอดงวดถัดไป</span>
+      <span class="v"><span class="baht">฿</span>3,200</span>
+    </div>
+    <div class="kv">
+      <span class="k">ครบกำหนด</span>
+      <span class="v">25 ส.ค. 2568 · อีก 5 วัน</span>
+    </div>
+  </div>
+
+  <div class="section-title">ลำดับงวด</div>
+  <div class="card">
+    <div class="timeline">
+      <div class="tl-item done">
+        <div class="tl-title">งวดที่ 5 ชำระแล้ว — พ้นระยะทวงถาม</div>
+        <div class="tl-meta">20 ส.ค. 2568 14:32 น. · พร้อมเพย์ · ฿3,400</div>
+      </div>
+      <div class="tl-item active">
+        <div class="tl-title">งวดที่ 6 งวดถัดไป</div>
+        <div class="tl-meta">ครบกำหนด 25 ส.ค. 2568 · ฿3,200</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-title">ปิดสัญญา งวดที่ 12</div>
+        <div class="tl-meta">กำหนด 25 ก.พ. 2569 · คงเหลือ 7 งวด</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-success mt-16">
+    <i data-lucide="badge-check"></i>
+    <div>ตัดยอดค้างชำระระยะที่ 1 แล้ว งวดถัดไปคือวันที่ 25 ส.ค. 2568 จำนวน ฿3,200</div>
+  </div>
+
+  <div class="text-center mt-16">
+    <a href="payment-history.html" class="sub">ดูประวัติการชำระ</a>
+  </div>
+
+  <div class="action-bar">
+    <a class="btn btn-outline">
+      <i data-lucide="download"></i> บันทึกสลิป
+    </a>
+    <a class="btn btn-primary" href="home.html">
+      <i data-lucide="house"></i> กลับหน้าแรก
+    </a>
+  </div>
+
+</div>
+</div>
+</body>
+</html>

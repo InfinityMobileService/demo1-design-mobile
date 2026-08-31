@@ -1,0 +1,723 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-20T16:23:01.439Z",
+  "title": "Design System: MBH Customer App",
+  "extensions": {
+    "colorMeta": {
+      "gold-500": {
+        "role": "primary",
+        "displayName": "MBH Gold",
+        "canonical": "#D2A32C",
+        "tonalRamp": [
+          "#FDF8EC",
+          "#F9EFD6",
+          "#F1DFAF",
+          "#E9CB77",
+          "#E2B63F",
+          "#D2A32C",
+          "#B0821A",
+          "#7A5A0C"
+        ]
+      },
+      "gold-ink": {
+        "role": "primary",
+        "displayName": "Deep Gold Ink",
+        "canonical": "#7A5A0C",
+        "tonalRamp": [
+          "#FDF8EC",
+          "#F9EFD6",
+          "#F1DFAF",
+          "#E9CB77",
+          "#E2B63F",
+          "#D2A32C",
+          "#B0821A",
+          "#7A5A0C"
+        ]
+      },
+      "gold-400": {
+        "role": "primary",
+        "displayName": "Gold Hover",
+        "canonical": "#E2B63F",
+        "tonalRamp": [
+          "#FDF8EC",
+          "#F9EFD6",
+          "#F1DFAF",
+          "#E9CB77",
+          "#E2B63F",
+          "#D2A32C",
+          "#B0821A",
+          "#7A5A0C"
+        ]
+      },
+      "gold-600": {
+        "role": "primary",
+        "displayName": "Gold Pressed / Focus",
+        "canonical": "#B0821A",
+        "tonalRamp": [
+          "#FDF8EC",
+          "#F9EFD6",
+          "#F1DFAF",
+          "#E9CB77",
+          "#E2B63F",
+          "#D2A32C",
+          "#B0821A",
+          "#7A5A0C"
+        ]
+      },
+      "gold-200": {
+        "role": "primary",
+        "displayName": "Gold Wash",
+        "canonical": "#F1DFAF",
+        "tonalRamp": [
+          "#FDF8EC",
+          "#F9EFD6",
+          "#F1DFAF",
+          "#E9CB77",
+          "#E2B63F",
+          "#D2A32C",
+          "#B0821A",
+          "#7A5A0C"
+        ]
+      },
+      "gold-100": {
+        "role": "primary",
+        "displayName": "Gold Tint",
+        "canonical": "#F9EFD6",
+        "tonalRamp": [
+          "#FDF8EC",
+          "#F9EFD6",
+          "#F1DFAF",
+          "#E9CB77",
+          "#E2B63F",
+          "#D2A32C",
+          "#B0821A",
+          "#7A5A0C"
+        ]
+      },
+      "gold-50": {
+        "role": "primary",
+        "displayName": "Gold Whisper",
+        "canonical": "#FDF8EC",
+        "tonalRamp": [
+          "#FDF8EC",
+          "#F9EFD6",
+          "#F1DFAF",
+          "#E9CB77",
+          "#E2B63F",
+          "#D2A32C",
+          "#B0821A",
+          "#7A5A0C"
+        ]
+      },
+      "ink-on-gold": {
+        "role": "primary",
+        "displayName": "Ink on Gold",
+        "canonical": "#241903",
+        "tonalRamp": [
+          "#FDF8EC",
+          "#F9EFD6",
+          "#F1DFAF",
+          "#E9CB77",
+          "#E2B63F",
+          "#D2A32C",
+          "#B0821A",
+          "#7A5A0C"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0F1115",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#55596A",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#646A79",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "page": {
+        "role": "neutral",
+        "displayName": "Page Ground",
+        "canonical": "#F1F2F5",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Panel White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Recess 1",
+        "canonical": "#F7F8FA",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "surface-3": {
+        "role": "neutral",
+        "displayName": "Recess 2",
+        "canonical": "#EDEFF3",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#E3E5EA",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "line-soft": {
+        "role": "neutral",
+        "displayName": "Row Hairline",
+        "canonical": "#EFF1F4",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "frame": {
+        "role": "neutral",
+        "displayName": "Device Backdrop",
+        "canonical": "#DFE1E7",
+        "tonalRamp": [
+          "#0F1115",
+          "#2A2E38",
+          "#55596A",
+          "#646A79",
+          "#9DA3B0",
+          "#C9CDD6",
+          "#E3E5EA",
+          "#F1F2F5"
+        ]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Overdue Red",
+        "canonical": "#C42F26",
+        "tonalRamp": [
+          "#4A100C",
+          "#7A1D17",
+          "#A32820",
+          "#C42F26",
+          "#DC6157",
+          "#EE968E",
+          "#F7C6C1",
+          "#FCEAE8"
+        ]
+      },
+      "danger-bg": {
+        "role": "tertiary",
+        "displayName": "Overdue Red Wash",
+        "canonical": "#FCEAE8",
+        "tonalRamp": [
+          "#4A100C",
+          "#7A1D17",
+          "#A32820",
+          "#C42F26",
+          "#DC6157",
+          "#EE968E",
+          "#F7C6C1",
+          "#FCEAE8"
+        ]
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "Settled Green",
+        "canonical": "#0E7C43",
+        "tonalRamp": [
+          "#04361D",
+          "#06552E",
+          "#0B6738",
+          "#0E7C43",
+          "#35A369",
+          "#6CC495",
+          "#A9DFC2",
+          "#E4F5EB"
+        ]
+      },
+      "success-bg": {
+        "role": "tertiary",
+        "displayName": "Settled Green Wash",
+        "canonical": "#E4F5EB",
+        "tonalRamp": [
+          "#04361D",
+          "#06552E",
+          "#0B6738",
+          "#0E7C43",
+          "#35A369",
+          "#6CC495",
+          "#A9DFC2",
+          "#E4F5EB"
+        ]
+      },
+      "warning": {
+        "role": "tertiary",
+        "displayName": "Pending Amber",
+        "canonical": "#9A5B06",
+        "tonalRamp": [
+          "#3A2202",
+          "#5E3703",
+          "#7B4805",
+          "#9A5B06",
+          "#C88A20",
+          "#E2B45E",
+          "#F2D6A2",
+          "#FCF0DC"
+        ]
+      },
+      "warning-bg": {
+        "role": "tertiary",
+        "displayName": "Pending Amber Wash",
+        "canonical": "#FCF0DC",
+        "tonalRamp": [
+          "#3A2202",
+          "#5E3703",
+          "#7B4805",
+          "#9A5B06",
+          "#C88A20",
+          "#E2B45E",
+          "#F2D6A2",
+          "#FCF0DC"
+        ]
+      },
+      "info": {
+        "role": "tertiary",
+        "displayName": "Informational Blue",
+        "canonical": "#1F5FB8",
+        "tonalRamp": [
+          "#0C2549",
+          "#133A73",
+          "#1A4E97",
+          "#1F5FB8",
+          "#4F86CE",
+          "#85AEE0",
+          "#BCD3F0",
+          "#E9F1FC"
+        ]
+      },
+      "info-bg": {
+        "role": "tertiary",
+        "displayName": "Informational Blue Wash",
+        "canonical": "#E9F1FC",
+        "tonalRamp": [
+          "#0C2549",
+          "#133A73",
+          "#1A4E97",
+          "#1F5FB8",
+          "#4F86CE",
+          "#85AEE0",
+          "#BCD3F0",
+          "#E9F1FC"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Amount XL",
+        "purpose": "The one oversized figure per page: the amount due inside the balance panel. Never used twice on a page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page-level statement inside a screen body, e.g. a payment confirmation."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Panel and section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text and the app bar title (at 600)."
+      },
+      "label": {
+        "displayName": "Section Label",
+        "purpose": "The band above every group, with an optional gold link on the right."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "List metadata, field hints and error lines."
+      },
+      "amount-lg": {
+        "displayName": "Amount LG",
+        "purpose": "Secondary figure: the total row, a page's second-order money."
+      },
+      "amount-md": {
+        "displayName": "Amount MD",
+        "purpose": "Comparison figures in a two-up summary."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All button labels; one size for every variant."
+      },
+      "tab-label": {
+        "displayName": "Tab Label",
+        "purpose": "Bottom navigation only; 600 weight when active."
+      }
+    },
+    "contrast": [
+      {
+        "pair": "ink-3 on surface",
+        "ratio": 5.41,
+        "note": "Lightest legal text colour; passes on white."
+      },
+      {
+        "pair": "ink-3 on page",
+        "ratio": 4.84,
+        "note": "Same token measured on the grey ground."
+      },
+      {
+        "pair": "ink-2 on surface",
+        "ratio": 6.95
+      },
+      {
+        "pair": "ink-2 on page",
+        "ratio": 6.2
+      },
+      {
+        "pair": "gold-ink on surface",
+        "ratio": 6.37,
+        "note": "Inline links and the active tab label."
+      },
+      {
+        "pair": "gold-ink on page",
+        "ratio": 5.69
+      },
+      {
+        "pair": "ink-on-gold on gold-500",
+        "ratio": 7.42,
+        "note": "Primary button label."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "sh-1",
+        "value": "0 1px 2px rgba(15, 17, 21, .06)",
+        "purpose": "Resting edge. Every surface that sits on the page: cards, lists, stat tiles, the primary button, the switch knob."
+      },
+      {
+        "name": "sh-2",
+        "value": "0 2px 4px rgba(15, 17, 21, .05), 0 8px 20px rgba(15, 17, 21, .06)",
+        "purpose": "The panel lift. Reserved for the one balance panel per page."
+      },
+      {
+        "name": "sh-3",
+        "value": "0 4px 8px rgba(15, 17, 21, .06), 0 18px 44px rgba(15, 17, 21, .12)",
+        "purpose": "The device frame at >=480px. Never on in-app content."
+      },
+      {
+        "name": "row-hairline",
+        "value": "inset 0 1px 0 #EFF1F4",
+        "purpose": "Separates sibling rows inside a list or key-value stack without a margin."
+      },
+      {
+        "name": "focus-glow",
+        "value": "0 0 0 3px #F9EFD6",
+        "purpose": "Input focus, paired with a #D2A32C border."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.2, .8, .25, 1)",
+        "purpose": "The only easing curve in the system."
+      },
+      {
+        "name": "rise",
+        "value": "@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } } — .5s var(--ease) both",
+        "purpose": "The one authored motion moment in the product: the balance panel's amount settling in on load. Disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "press",
+        "value": "transform .12s var(--ease) to scale(.985)",
+        "purpose": "Uniform button press feedback."
+      },
+      {
+        "name": "state",
+        "value": ".16s var(--ease)",
+        "purpose": "Background, colour and border-colour state changes on rows, chips, tabs and icon buttons."
+      },
+      {
+        "name": "toggle",
+        "value": ".18s var(--ease)",
+        "purpose": "Switch track and knob travel."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }",
+        "purpose": "Global kill switch; the system ships with it on."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "shell",
+        "value": "420px",
+        "note": "The app column's max-width. It never grows."
+      },
+      {
+        "name": "framed",
+        "value": "480px",
+        "note": "The only media query: the shell becomes a 28px-radius device frame on #DFE1E7. Not a layout change."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The payment action. Gold fill, one per view.",
+      "html": "<button class=\"ds-btn ds-btn-primary\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1\"/><path d=\"M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4\"/></svg> ชำระเงิน</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 52px; padding: 0 20px; border: 1px solid transparent; border-radius: 14px; font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; font-size: 15px; font-weight: 600; letter-spacing: -.01em; cursor: pointer; transition: transform .12s cubic-bezier(.2,.8,.25,1), background .16s cubic-bezier(.2,.8,.25,1), border-color .16s cubic-bezier(.2,.8,.25,1); } .ds-btn:active { transform: scale(.985); } .ds-btn:focus-visible { outline: 2px solid #B0821A; outline-offset: 2px; } .ds-btn-primary { background: #D2A32C; color: #241903; box-shadow: 0 1px 2px rgba(15,17,21,.06); } .ds-btn-primary:hover { background: #E2B63F; } .ds-ico { flex-shrink: 0; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The secondary payment path (แจ้งสลิป); pairs with the primary at equal width.",
+      "html": "<button class=\"ds-btn ds-btn-outline\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3v12\"/><path d=\"m17 8-5-5-5 5\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/></svg> แจ้งสลิป</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 52px; padding: 0 20px; border: 1px solid transparent; border-radius: 14px; font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; font-size: 15px; font-weight: 600; letter-spacing: -.01em; cursor: pointer; transition: transform .12s cubic-bezier(.2,.8,.25,1), background .16s cubic-bezier(.2,.8,.25,1), border-color .16s cubic-bezier(.2,.8,.25,1); } .ds-btn:active { transform: scale(.985); } .ds-btn:focus-visible { outline: 2px solid #B0821A; outline-offset: 2px; } .ds-btn-outline { background: #FFFFFF; border-color: #E3E5EA; color: #0F1115; } .ds-btn-outline:hover { background: #F7F8FA; } .ds-ico { flex-shrink: 0; }"
+    },
+    {
+      "name": "Balance Panel",
+      "kind": "custom",
+      "refersTo": "balance-panel",
+      "description": "The signature component: one per page, the only surface allowed the panel lift, holding the only oversized number on the page.",
+      "html": "<div class=\"ds-balance\"><div class=\"ds-balance-head\"><span class=\"ds-balance-label\">ยอดที่ต้องชำระตอนนี้</span><span class=\"ds-badge ds-badge-danger\">เกินกำหนด</span></div><div class=\"ds-amount-xl\"><span class=\"ds-baht\">฿</span>3,400</div><div class=\"ds-balance-meta\">งวดที่ 5 · ครบกำหนด 25 ก.ค. 2568</div><div class=\"ds-kv\"><span class=\"ds-k\">ค่างวด</span><span class=\"ds-v\">฿3,200</span></div><div class=\"ds-kv\"><span class=\"ds-k\">ค่าติดตามทวงถาม</span><span class=\"ds-v\">฿200</span></div></div>",
+      "css": ".ds-balance { font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; font-variant-numeric: tabular-nums lining-nums; color: #0F1115; background: #FFFFFF; border-radius: 18px; padding: 20px 18px 18px; box-shadow: 0 2px 4px rgba(15,17,21,.05), 0 8px 20px rgba(15,17,21,.06); } .ds-balance-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; } .ds-balance-label { font-size: 13px; color: #646A79; } .ds-amount-xl { margin-top: 6px; font-size: 34px; font-weight: 700; letter-spacing: -.01em; line-height: 1.15; animation: ds-rise .5s cubic-bezier(.2,.8,.25,1) both; } .ds-baht { margin-right: .06em; } @keyframes ds-rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } } @media (prefers-reduced-motion: reduce) { .ds-amount-xl { animation: none; } } .ds-balance-meta { margin-top: 8px; font-size: 13px; color: #55596A; } .ds-kv { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 10px 0; font-size: 14px; } .ds-kv + .ds-kv { box-shadow: inset 0 1px 0 #EFF1F4; } .ds-kv .ds-k { flex-shrink: 0; color: #646A79; } .ds-kv .ds-v { font-weight: 500; text-align: right; } .ds-badge { display: inline-flex; align-items: center; gap: 5px; height: 22px; padding: 0 9px; border-radius: 8px; font-size: 12px; font-weight: 600; white-space: nowrap; } .ds-badge-danger { background: #FCEAE8; color: #C42F26; }"
+    },
+    {
+      "name": "Instalment Ticks",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Signature progress mark: one bar per instalment, countable rather than averaged. Always carries role=img and a Thai aria-label because it is pure colour.",
+      "html": "<div class=\"ds-ticks\" role=\"img\" aria-label=\"ชำระแล้ว 4 งวด ค้าง 1 งวด งวดถัดไป 1 งวด เหลืออีก 6 งวด จากทั้งหมด 12 งวด\"><span class=\"ds-tick ds-paid\"></span><span class=\"ds-tick ds-paid\"></span><span class=\"ds-tick ds-paid\"></span><span class=\"ds-tick ds-paid\"></span><span class=\"ds-tick ds-overdue\"></span><span class=\"ds-tick ds-due\"></span><span class=\"ds-tick\"></span><span class=\"ds-tick\"></span><span class=\"ds-tick\"></span><span class=\"ds-tick\"></span><span class=\"ds-tick\"></span><span class=\"ds-tick\"></span></div>",
+      "css": ".ds-ticks { display: flex; gap: 3px; height: 26px; } .ds-tick { flex: 1; border-radius: 3px; background: #E3E5EA; } .ds-tick.ds-paid { background: #D2A32C; } .ds-tick.ds-overdue { background: #C42F26; } .ds-tick.ds-due { background: #F1DFAF; }"
+    },
+    {
+      "name": "List Row",
+      "kind": "card",
+      "refersTo": "list-item",
+      "description": "The workhorse row: tinted icon tile, title over metadata, and a right-aligned amount column so figures line up down the list.",
+      "html": "<div class=\"ds-list\"><a class=\"ds-row\" href=\"#\"><span class=\"ds-row-ico ds-r\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" x2=\"12\" y1=\"8\" y2=\"12\"/><line x1=\"12\" x2=\"12.01\" y1=\"16\" y2=\"16\"/></svg></span><span class=\"ds-row-body\"><span class=\"ds-row-title\">งวดที่ 5</span><span class=\"ds-row-desc\">ครบกำหนด 25 ก.ค. 2568 · ค้าง 26 วัน</span></span><span class=\"ds-row-trail\"><span class=\"ds-amount-sm ds-t-danger\">฿3,400</span></span></a><a class=\"ds-row\" href=\"#\"><span class=\"ds-row-ico ds-g\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg></span><span class=\"ds-row-body\"><span class=\"ds-row-title\">งวดที่ 4</span><span class=\"ds-row-desc\">25 มิ.ย. 2568 · พร้อมเพย์</span></span><span class=\"ds-row-trail\"><span class=\"ds-amount-sm\">฿3,200</span><span class=\"ds-row-desc ds-t-success\">สำเร็จ</span></span></a></div>",
+      "css": ".ds-list { font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; font-variant-numeric: tabular-nums lining-nums; color: #0F1115; background: #FFFFFF; border-radius: 18px; box-shadow: 0 1px 2px rgba(15,17,21,.06); overflow: hidden; } .ds-row { display: flex; align-items: center; gap: 12px; min-height: 62px; padding: 12px 16px; text-decoration: none; color: inherit; transition: background .16s cubic-bezier(.2,.8,.25,1); } .ds-row + .ds-row { box-shadow: inset 0 1px 0 #EFF1F4; } .ds-row:hover { background: #F7F8FA; } .ds-row:active { background: #EDEFF3; } .ds-row-ico { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex-shrink: 0; border-radius: 14px; background: #FDF8EC; color: #7A5A0C; } .ds-row-ico.ds-r { background: #FCEAE8; color: #C42F26; } .ds-row-ico.ds-g { background: #E4F5EB; color: #0E7C43; } .ds-row-body { flex: 1; min-width: 0; display: block; } .ds-row-title { display: block; font-size: 15px; font-weight: 500; line-height: 1.35; } .ds-row-desc { display: block; margin-top: 2px; font-size: 12.5px; color: #646A79; } .ds-row-trail { flex-shrink: 0; text-align: right; } .ds-amount-sm { display: block; font-size: 15px; font-weight: 600; } .ds-t-danger { color: #C42F26; } .ds-t-success { color: #0E7C43; }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "badge",
+      "description": "A status word wearing its colour; never appears without the word.",
+      "html": "<span class=\"ds-badge ds-badge-danger\">เกินกำหนด</span> <span class=\"ds-badge ds-badge-warning\">รอตรวจสอบ</span> <span class=\"ds-badge ds-badge-success\">สำเร็จ</span> <span class=\"ds-badge\">ยังไม่ถึงกำหนด</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; gap: 5px; height: 22px; padding: 0 9px; border-radius: 8px; font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; font-size: 12px; font-weight: 600; white-space: nowrap; background: #EDEFF3; color: #55596A; } .ds-badge-danger { background: #FCEAE8; color: #C42F26; } .ds-badge-warning { background: #FCF0DC; color: #9A5B06; } .ds-badge-success { background: #E4F5EB; color: #0E7C43; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "52px white field; focus is the only moment gold touches an inactive control.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-label\" for=\"ds-amt\">จำนวนเงินที่โอน <span class=\"ds-req\">*</span></label><input class=\"ds-input\" id=\"ds-amt\" type=\"text\" placeholder=\"เช่น 3,400\"><span class=\"ds-hint\">กรอกยอดตามสลิปที่โอนจริง</span></div>",
+      "css": ".ds-field { font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; max-width: 320px; } .ds-label { display: block; margin-bottom: 6px; font-size: 13px; font-weight: 500; color: #55596A; } .ds-req { color: #C42F26; } .ds-input { width: 100%; height: 52px; padding: 0 14px; background: #FFFFFF; color: #0F1115; border: 1px solid #E3E5EA; border-radius: 14px; font-family: inherit; font-size: 15px; caret-color: #B0821A; transition: border-color .16s cubic-bezier(.2,.8,.25,1), box-shadow .16s cubic-bezier(.2,.8,.25,1); } .ds-input:hover { border-color: #CFD3DC; } .ds-input:focus { outline: none; border-color: #D2A32C; box-shadow: 0 0 0 3px #F9EFD6; } .ds-input::placeholder { color: #9DA3B0; } .ds-hint { display: block; margin-top: 6px; font-size: 12.5px; color: #646A79; }"
+    },
+    {
+      "name": "Choice Row",
+      "kind": "input",
+      "refersTo": "choice",
+      "description": "The payment-method selector: a full-width row with a gold ring and filled dot when selected.",
+      "html": "<button class=\"ds-choice ds-selected\"><span class=\"ds-choice-body\"><span class=\"ds-choice-title\">พร้อมเพย์ QR</span><span class=\"ds-choice-desc\">สแกนจ่ายผ่านแอปธนาคาร ตัดยอดทันที</span></span><span class=\"ds-radio\"></span></button><button class=\"ds-choice\"><span class=\"ds-choice-body\"><span class=\"ds-choice-title\">โอนเข้าบัญชีบริษัท</span><span class=\"ds-choice-desc\">โอนแล้วแจ้งสลิป รอเจ้าหน้าที่ตรวจสอบ</span></span><span class=\"ds-radio\"></span></button>",
+      "css": ".ds-choice { display: flex; align-items: center; gap: 12px; width: 100%; max-width: 360px; padding: 14px 16px; text-align: left; background: #FFFFFF; color: #0F1115; border: 1px solid #E3E5EA; border-radius: 14px; font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; cursor: pointer; transition: border-color .16s cubic-bezier(.2,.8,.25,1), background .16s cubic-bezier(.2,.8,.25,1), box-shadow .16s cubic-bezier(.2,.8,.25,1); } .ds-choice + .ds-choice { margin-top: 10px; } .ds-choice:hover { background: #F7F8FA; } .ds-choice:focus-visible { outline: 2px solid #B0821A; outline-offset: 2px; } .ds-choice.ds-selected { border-color: #D2A32C; box-shadow: 0 0 0 1px #D2A32C; } .ds-choice-body { flex: 1; min-width: 0; } .ds-choice-title { display: block; font-size: 15px; font-weight: 500; } .ds-choice-desc { display: block; margin-top: 2px; font-size: 12.5px; color: #646A79; } .ds-radio { width: 22px; height: 22px; flex-shrink: 0; border: 2px solid #C6CAD4; border-radius: 999px; transition: border-color .16s cubic-bezier(.2,.8,.25,1), box-shadow .16s cubic-bezier(.2,.8,.25,1); } .ds-choice.ds-selected .ds-radio { border-color: #D2A32C; box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 11px #D2A32C; }"
+    },
+    {
+      "name": "Bottom Tab Bar",
+      "kind": "nav",
+      "refersTo": "tab-bar",
+      "description": "Four fixed destinations, injected by layout.js from window.PAGE. The active tab changes colour, weight and stroke together so gold is never the only signal.",
+      "html": "<nav class=\"ds-tabbar\"><a class=\"ds-tab ds-active\" href=\"#\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"/><path d=\"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/></svg><span>หน้าแรก</span></a><a class=\"ds-tab\" href=\"#\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 2v4\"/><path d=\"M16 2v4\"/><rect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\"/><path d=\"M3 10h18\"/><path d=\"M8 14h.01\"/><path d=\"M12 14h.01\"/><path d=\"M16 14h.01\"/><path d=\"M8 18h.01\"/><path d=\"M12 18h.01\"/><path d=\"M16 18h.01\"/></svg><span>งวดผ่อน</span></a><a class=\"ds-tab\" href=\"#\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z\"/><path d=\"M14 8H8\"/><path d=\"M16 12H8\"/><path d=\"M13 16H8\"/></svg><span>ประวัติ</span></a><a class=\"ds-tab\" href=\"#\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"8\" r=\"5\"/><path d=\"M20 21a8 8 0 0 0-16 0\"/></svg><span>บัญชี</span></a></nav>",
+      "css": ".ds-tabbar { display: flex; width: 100%; max-width: 420px; height: 60px; background: #FFFFFF; border-top: 1px solid #E3E5EA; font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; } .ds-tab { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: #646A79; text-decoration: none; transition: color .16s cubic-bezier(.2,.8,.25,1); } .ds-tab .ds-ico { width: 22px; height: 22px; stroke-width: 1.8; } .ds-tab.ds-active { color: #7A5A0C; font-weight: 600; } .ds-tab.ds-active .ds-ico { stroke-width: 2.2; }"
+    },
+    {
+      "name": "Status Notice",
+      "kind": "custom",
+      "refersTo": "notice",
+      "description": "The one-line collection-status bar that opens a page. Red for overdue; the pending variant steps down to amber because 'being reviewed' is not an alarm.",
+      "html": "<a class=\"ds-notice\" href=\"#\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" x2=\"12\" y1=\"8\" y2=\"12\"/><line x1=\"12\" x2=\"12.01\" y1=\"16\" y2=\"16\"/></svg><span class=\"ds-notice-text\">ค้างชำระเกินกำหนด 26 วัน · ระยะที่ 1</span><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></a><a class=\"ds-notice ds-pending\" href=\"#\"><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" x2=\"12\" y1=\"8\" y2=\"12\"/><line x1=\"12\" x2=\"12.01\" y1=\"16\" y2=\"16\"/></svg><span class=\"ds-notice-text\">สลิปอยู่ระหว่างตรวจสอบ</span><svg class=\"ds-ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></a>",
+      "css": ".ds-notice { display: flex; align-items: center; gap: 10px; width: 100%; max-width: 398px; padding: 13px 14px; border-radius: 14px; background: #FCEAE8; color: #A32820; font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; font-size: 13.5px; font-weight: 500; text-align: left; text-decoration: none; } .ds-notice + .ds-notice { margin-top: 10px; } .ds-notice:focus-visible { outline: 2px solid #B0821A; outline-offset: 2px; } .ds-notice-text { flex: 1; min-width: 0; line-height: 1.45; } .ds-notice.ds-pending { background: #FCF0DC; color: #9A5B06; } .ds-ico { flex-shrink: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Daylight Ledger",
+    "overview": "This is a debt app for people who open it worried. Its whole job is to be legible in a hurry, in sunlight, on the one phone the customer is still paying off — so the system is built as a ledger, not as a brand experience. A page is a sheet of light grey with white panels laid on it, and on every page exactly one number is bigger than everything else: the amount due. Everything else in the system exists to keep that number unambiguous and to put a payable action within one thumb-reach of it.\n\nThe visual direction is canon, chosen deliberately. This is the Thai banking-app category played straight — the shared grammar of SCB EASY, KPLUS, KMA, Krungsri เฟิร์สต์ชอยส์, tplus, TrueMoney and เป๋าตัง — executed to the craft standard of Revolut, Wise and Monzo. It is not an own-world, and future work must not smuggle one in. The value here is recognisability: a customer who has used any Thai banking app should not have to learn this one. Every impulse toward a signature device should be spent instead on making the standard components sharper, quieter and faster to read.\n\nThe two anti-references are explicit and confirmed: no card stacked on a shadowed card, and no ornament that slows a number down. Depth is used to say 'this is the one thing on the page', never to decorate. The palette is one accent and one accent only — MBH gold — over white and grey, with red, green, amber and blue held in reserve as status vocabulary that never gets borrowed for decoration.",
+    "keyCharacteristics": [
+      "Light-grey ground (#F1F2F5), white panels, hairline #E3E5EA borders, shadows so faint they read as separation rather than lift",
+      "Exactly one gold accent (#D2A32C) carrying exactly three jobs, and never status",
+      "One oversized tabular number (34px) per page, wrapped in a single lifted white panel",
+      "Every ink level clears 4.5:1 on both the white surface and the grey page",
+      "52px controls, 14–18px radii, 16px page gutter, 420px shell",
+      "Thai-only UI, Lucide icons only, one stylesheet, one shell script, no runtime network calls for icons",
+      "One authored motion moment in the entire product, disabled under prefers-reduced-motion"
+    ],
+    "rules": [
+      {
+        "name": "The Three Jobs Rule",
+        "body": "Gold has exactly three jobs: brand accent, primary action, and inline link. Nothing else. If a new element wants gold for a fourth reason, it is asking to be a status, and status is red/green/amber/blue with a word attached.",
+        "section": "colors"
+      },
+      {
+        "name": "The Both-Grounds Rule",
+        "body": "Every ink level must clear 4.5:1 against both --surface (#FFFFFF) and --page (#F1F2F5). Text moves between panel and ground constantly in this layout, so a token that only passes on white is not a token. --ink-3 is the lightest legal text colour in the system.",
+        "section": "colors"
+      },
+      {
+        "name": "The Colour Never Travels Alone Rule",
+        "body": "No status is communicated by colour alone. A red amount is accompanied by the word เกินกำหนด, a green figure by สำเร็จ, an amber row by รอตรวจสอบ. The tick strip — pure colour by construction — carries a role=\"img\" and a full Thai aria-label describing every instalment's state.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Big Number Rule",
+        "body": "Exactly one .amount-xl per page, and it lives inside the page's single .balance panel. Every one of the eleven customer pages obeys this. A second oversized figure does not create emphasis, it destroys it — step down to .amount-lg or a .kv.total row instead.",
+        "section": "typography"
+      },
+      {
+        "name": "The Baht Sidebearing Rule",
+        "body": "At 700 weight, Prompt's ฿ has a right sidebearing narrow enough to collide with the leading digit. Wrap the sign — <span class=\"baht\">฿</span>3,400 — inside .amount-xl and .amount-lg. The .06em correction lives on the glyph, never on the line's letter-spacing, so the digits keep their tabular rhythm.",
+        "section": "typography"
+      },
+      {
+        "name": "The Thai Wrap Rule",
+        "body": "The UI is Thai-only and Thai does not put spaces between words, so the browser will break a line almost anywhere inside a phrase. Never rely on a phrase staying on one line at 430px. Give every trailing number its own .trail column so a wrap can never separate an amount from its label, and reserve white-space: nowrap for atomic tokens only — the app-bar title (which also gets text-overflow: ellipsis) and badge text.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Column Rule",
+        "body": "The layout is one column. The only sanctioned horizontal splits are the 2-up .grid-2 / .stats (equal halves, 10px gap) and a leading-icon / body / trailing-value row. Nothing else divides the width.",
+        "section": "layout"
+      },
+      {
+        "name": "The No Card-on-Card Rule",
+        "body": "A shadowed surface never contains another shadowed surface. Nesting is expressed by recession instead: a --surface-3 track, a --line divider, a --surface-2 inner row, or .card-flush (padding removed, overflow hidden) so a list can occupy a card without becoming a second card.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Lift Per Page Rule",
+        "body": "--sh-2 appears once per page, on the balance panel. If a new surface wants to be more important than the cards around it, it wants to be the balance panel — there is only one.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Radius-by-Size Rule",
+        "body": "The bigger the surface, the bigger the corner: 8 → 10 → 14 → 18. A 52px control is 14px; an 18px-radius object is a container. A control and its container never share a radius.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Chat Tail Rule",
+        "body": "The only asymmetric corner in the system is the chat bubble, which drops its near-bottom corner to 6px to point at its speaker. Do not invent other asymmetries.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do give every page exactly one .balance panel holding exactly one .amount-xl, and put the payment action inside that panel.",
+      "Do wrap the currency sign as <span class=\"baht\">฿</span> inside .amount-xl and .amount-lg.",
+      "Do pair every status colour with a Thai word — เกินกำหนด, สำเร็จ, รอตรวจสอบ — and give any colour-only graphic a role=\"img\" with a full Thai aria-label.",
+      "Do keep gold to its three jobs: brand accent, primary action, inline link.",
+      "Do check any new text colour against both #FFFFFF and #F1F2F5 at 4.5:1 before adding it.",
+      "Do declare the shell through window.PAGE and let assets/layout.js render the app bar and tab bar.",
+      "Do put every style in assets/theme.css; there is no second stylesheet and no <style> block on any page.",
+      "Do right-align amounts in a .trail or .kv .v column so tabular figures line up down the page.",
+      "Do separate rows inside a list with the inset --line-soft hairline instead of a margin.",
+      "Do carry the direction contract verbatim as an HTML comment inside <body> on every page."
+    ],
+    "donts": [
+      "Don't nest a shadowed surface inside a shadowed surface; use .card-flush, a divider, or a recessed --surface-2/3 tone instead.",
+      "Don't use gold to mean success, urgency, or anything else on the status axis.",
+      "Don't introduce a second accent hue, a gradient, a glass or blur effect, or a decorative illustration — the direction is canon and those read as a competing world.",
+      "Don't add a second oversized number to a page to make something else feel important.",
+      "Don't put text on any colour lighter than --ink-3 (#646A79).",
+      "Don't apply white-space: nowrap to a Thai phrase; Thai breaks mid-phrase and the layout must survive it at 430px.",
+      "Don't add a second animation. There is one authored motion moment in the product — rise, 500ms, on the balance panel's amount — and everything else is state feedback at 120–180ms on cubic-bezier(.2,.8,.25,1). All of it is switched off under prefers-reduced-motion.",
+      "Don't rely on hover to reveal anything; the target is a thumb on a phone.",
+      "Don't add a runtime network dependency — icons are vendored and pinned, and the select chevron is an inline data URI.",
+      "Don't widen the column or reflow for desktop; above 480px the design becomes a framed phone, not a wide layout.",
+      "Don't use emoji or a non-Lucide icon, and don't let an icon carry a meaning by itself."
+    ]
+  }
+}

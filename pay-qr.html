@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>พร้อมเพย์ QR — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<!--
+THESIS: แอปหนี้ที่อ่านออกกลางแดดในแวบเดียว — มาตรฐานแอปการเงินไทยที่ทำให้เนี้ยบระดับ KPLUS/Revolut ปฏิเสธการ์ดเงาซ้อนการ์ดและลูกเล่นที่ทำให้ตัวเลขอ่านช้าลง
+OWN-WORLD: พื้นเทา #F1F2F5 การ์ดขาวเงาบาง เส้น 1px ทอง #D2A32C เป็น accent เดียวของระบบ แดง/เขียวสงวนไว้สื่อสถานะเท่านั้น Prompt ตัวเลข tabular ปุ่มสูง 52px มุม 14-18px
+STORY: ลูกค้าที่ค้างงวดเปิดแอป เห็นยอด ฿3,400 กับวันครบกำหนดก่อนอย่างอื่น เข้าใจว่าค่าติดตาม ฿200 มาจากไหน แล้วกดจ่ายหรือแจ้งสลิปได้ใน 1 แตะ
+FIRST VIEWPORT: แถบสถานะค้างชำระหนึ่งบรรทัด แล้วแผงยอดขาวเต็มความกว้าง ยอด ฿3,400 ที่ 34px คือตัวใหญ่ที่สุดในหน้า ใต้ยอดเป็นแถบ 12 ขีดของ 12 งวด ปิดท้ายด้วยปุ่มชำระเงินคู่แจ้งสลิป
+FORM: canon (มาตรฐานหมวด ผู้ใช้เลือกเอง) นอกลิสต์ผู้สมัครทั้ง 7 · seed 402bb3ea
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<div class="app">
+<script>window.PAGE = { title: "พร้อมเพย์ QR", back: "pay-methods.html" };</script>
+<script src="assets/layout.js"></script>
+<div class="screen">
+
+  <a class="notice" href="collection-detail.html">
+    <i data-lucide="circle-alert"></i>
+    <span class="flex-1">งวดที่ 5 ค้าง 26 วัน · ระยะที่ 1 · รวมค่าติดตาม ฿200</span>
+  </a>
+
+  <div class="balance mt-12">
+    <div class="row-between">
+      <div class="label">ยอดที่ต้องชำระตอนนี้</div>
+      <span class="badge badge-danger">เกินกำหนด</span>
+    </div>
+    <div class="amount-xl"><span class="baht">฿</span>3,400</div>
+    <div class="meta">งวดที่ 5 · LN-2568-0417 · iPhone 15 128GB สีดำ</div>
+
+    <div class="divider"></div>
+
+    <div class="kv">
+      <span class="k">ค่างวด</span>
+      <span class="v"><span class="baht">฿</span>3,200</span>
+    </div>
+    <div class="kv">
+      <span class="k">ค่าติดตามทวงถาม</span>
+      <span class="v"><span class="baht">฿</span>200</span>
+    </div>
+    <div class="kv">
+      <span class="k">ค่าธรรมเนียม</span>
+      <span class="v t-success">฿0</span>
+    </div>
+  </div>
+
+  <div class="card mt-12">
+    <div class="text-center">
+      <div class="qr-box">
+        <svg viewBox="-1.2 -1.2 23.4 23.4" width="176" height="176" fill="var(--ink)" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="คิวอาร์โค้ดพร้อมเพย์"><rect x="0" y="0" width="7" height="1"/><rect x="8" y="0" width="2" height="1"/><rect x="11" y="0" width="2" height="1"/><rect x="14" y="0" width="7" height="1"/><rect x="0" y="1" width="1" height="1"/><rect x="6" y="1" width="1" height="1"/><rect x="8" y="1" width="5" height="1"/><rect x="14" y="1" width="1" height="1"/><rect x="20" y="1" width="1" height="1"/><rect x="0" y="2" width="1" height="1"/><rect x="2" y="2" width="3" height="1"/><rect x="6" y="2" width="1" height="1"/><rect x="10" y="2" width="3" height="1"/><rect x="14" y="2" width="1" height="1"/><rect x="16" y="2" width="3" height="1"/><rect x="20" y="2" width="1" height="1"/><rect x="0" y="3" width="1" height="1"/><rect x="2" y="3" width="3" height="1"/><rect x="6" y="3" width="1" height="1"/><rect x="9" y="3" width="4" height="1"/><rect x="14" y="3" width="1" height="1"/><rect x="16" y="3" width="3" height="1"/><rect x="20" y="3" width="1" height="1"/><rect x="0" y="4" width="1" height="1"/><rect x="2" y="4" width="3" height="1"/><rect x="6" y="4" width="1" height="1"/><rect x="8" y="4" width="2" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="14" y="4" width="1" height="1"/><rect x="16" y="4" width="3" height="1"/><rect x="20" y="4" width="1" height="1"/><rect x="0" y="5" width="1" height="1"/><rect x="6" y="5" width="1" height="1"/><rect x="8" y="5" width="3" height="1"/><rect x="12" y="5" width="1" height="1"/><rect x="14" y="5" width="1" height="1"/><rect x="20" y="5" width="1" height="1"/><rect x="0" y="6" width="7" height="1"/><rect x="8" y="6" width="1" height="1"/><rect x="10" y="6" width="1" height="1"/><rect x="12" y="6" width="1" height="1"/><rect x="14" y="6" width="7" height="1"/><rect x="9" y="7" width="1" height="1"/><rect x="11" y="7" width="1" height="1"/><rect x="0" y="8" width="2" height="1"/><rect x="4" y="8" width="5" height="1"/><rect x="12" y="8" width="2" height="1"/><rect x="16" y="8" width="5" height="1"/><rect x="0" y="9" width="4" height="1"/><rect x="5" y="9" width="1" height="1"/><rect x="7" y="9" width="1" height="1"/><rect x="9" y="9" width="1" height="1"/><rect x="12" y="9" width="4" height="1"/><rect x="18" y="9" width="1" height="1"/><rect x="20" y="9" width="1" height="1"/><rect x="0" y="10" width="7" height="1"/><rect x="10" y="10" width="4" height="1"/><rect x="16" y="10" width="5" height="1"/><rect x="1" y="11" width="5" height="1"/><rect x="7" y="11" width="7" height="1"/><rect x="15" y="11" width="6" height="1"/><rect x="0" y="12" width="2" height="1"/><rect x="3" y="12" width="8" height="1"/><rect x="12" y="12" width="2" height="1"/><rect x="15" y="12" width="3" height="1"/><rect x="8" y="13" width="2" height="1"/><rect x="12" y="13" width="6" height="1"/><rect x="19" y="13" width="1" height="1"/><rect x="0" y="14" width="7" height="1"/><rect x="8" y="14" width="9" height="1"/><rect x="18" y="14" width="3" height="1"/><rect x="0" y="15" width="1" height="1"/><rect x="6" y="15" width="1" height="1"/><rect x="8" y="15" width="3" height="1"/><rect x="13" y="15" width="6" height="1"/><rect x="0" y="16" width="1" height="1"/><rect x="2" y="16" width="3" height="1"/><rect x="6" y="16" width="1" height="1"/><rect x="8" y="16" width="5" height="1"/><rect x="15" y="16" width="1" height="1"/><rect x="17" y="16" width="2" height="1"/><rect x="20" y="16" width="1" height="1"/><rect x="0" y="17" width="1" height="1"/><rect x="2" y="17" width="3" height="1"/><rect x="6" y="17" width="1" height="1"/><rect x="9" y="17" width="4" height="1"/><rect x="14" y="17" width="1" height="1"/><rect x="17" y="17" width="1" height="1"/><rect x="0" y="18" width="1" height="1"/><rect x="2" y="18" width="3" height="1"/><rect x="6" y="18" width="1" height="1"/><rect x="8" y="18" width="3" height="1"/><rect x="15" y="18" width="2" height="1"/><rect x="20" y="18" width="1" height="1"/><rect x="0" y="19" width="1" height="1"/><rect x="6" y="19" width="1" height="1"/><rect x="8" y="19" width="3" height="1"/><rect x="12" y="19" width="5" height="1"/><rect x="18" y="19" width="3" height="1"/><rect x="0" y="20" width="7" height="1"/><rect x="10" y="20" width="3" height="1"/><rect x="14" y="20" width="2" height="1"/><rect x="19" y="20" width="2" height="1"/></svg>
+      </div>
+      <div class="h3 mt-16">บจก. บ้านมือถือ โมบายโฮม</div>
+      <div class="sub mt-4">พร้อมเพย์ เลขผู้เสียภาษี 0-1055-58012-34-1</div>
+    </div>
+    <div class="row-between mt-16">
+      <span class="sub"><i data-lucide="timer"></i> QR หมดอายุใน</span>
+      <span class="amount-md">14:32</span>
+    </div>
+    <div class="sub mt-4">จาก 15:00 นาที · สแกนด้วยแอปธนาคาร</div>
+  </div>
+
+  <div class="grid-2 mt-12">
+    <a class="btn btn-outline btn-sm">
+      <i data-lucide="download"></i> บันทึก QR
+    </a>
+    <a class="btn btn-outline btn-sm">
+      <i data-lucide="share-2"></i> แชร์
+    </a>
+  </div>
+
+  <div class="section-title">รายละเอียดการชำระ</div>
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title">พร้อมเพย์ QR</div>
+      <span class="badge">ไม่มีค่าธรรมเนียม</span>
+    </div>
+    <div class="kv">
+      <span class="k">ชื่อบัญชี</span>
+      <span class="v">บจก. บ้านมือถือ โมบายโฮม</span>
+    </div>
+    <div class="kv">
+      <span class="k">ผู้ชำระ</span>
+      <span class="v">นายสมชาย ใจดี</span>
+    </div>
+    <div class="kv">
+      <span class="k">เลขอ้างอิง 1</span>
+      <span class="v">LN25680417</span>
+    </div>
+    <div class="kv">
+      <span class="k">เลขอ้างอิง 2</span>
+      <span class="v">05</span>
+    </div>
+    <div class="kv">
+      <span class="k">ค่างวดที่ 5</span>
+      <span class="v"><span class="baht">฿</span>3,200</span>
+    </div>
+    <div class="kv">
+      <span class="k">ค่าติดตามทวงถาม</span>
+      <span class="v"><span class="baht">฿</span>200</span>
+    </div>
+    <div class="kv total">
+      <span class="k">รวมทั้งสิ้น</span>
+      <span class="v"><span class="baht">฿</span>3,400</span>
+    </div>
+  </div>
+
+  <div class="section-title">ขั้นตอนการชำระ</div>
+  <div class="card">
+    <div class="timeline">
+      <div class="tl-item done">
+        <div class="tl-title">เลือกช่องทางพร้อมเพย์ QR</div>
+        <div class="tl-meta">20 ส.ค. 2568 · 14:28 น.</div>
+      </div>
+      <div class="tl-item active">
+        <div class="tl-title">สแกน QR ด้วยแอปธนาคาร</div>
+        <div class="tl-meta">ตรวจสอบชื่อบัญชีและยอด ฿3,400</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-title">ยืนยันชำระในแอปธนาคาร</div>
+        <div class="tl-meta">จากนั้นกลับมาหน้านี้ แล้วกด “ฉันชำระแล้ว”</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-title">รับใบเสร็จอัตโนมัติ</div>
+        <div class="tl-meta">ระบบตัดยอดค้างชำระระยะที่ 1 หลังเงินเข้าบัญชี</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-warning mt-16">
+    <i data-lucide="circle-alert"></i>
+    <div>กรุณาสแกนและชำระภายในเวลาที่กำหนด หากโอนผ่านบัญชีธนาคารแล้ว ให้กด “โอนแล้ว แจ้งสลิป”</div>
+  </div>
+
+  <div class="action-bar">
+    <a class="btn btn-outline" href="pay-slip.html">
+      <i data-lucide="upload"></i> โอนแล้ว แจ้งสลิป
+    </a>
+    <a class="btn btn-primary" href="pay-success.html">
+      <i data-lucide="check"></i> ฉันชำระแล้ว
+    </a>
+  </div>
+
+</div>
+</div>
+</body>
+</html>

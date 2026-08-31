@@ -1,0 +1,80 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-color",
+        "value": "#afb4c0",
+        "createdAt": "2026-08-30T17:53:08.267Z",
+        "reason": "incumbent scrollbar hover already in theme.css v3"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#c9cdd6",
+        "createdAt": "2026-08-30T17:53:08.300Z",
+        "reason": "incumbent scrollbar thumb already in theme.css v3"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#b3b8c4",
+        "createdAt": "2026-08-30T17:53:08.337Z",
+        "reason": "incumbent chevron color already in theme.css v3"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#cfd3dc",
+        "createdAt": "2026-08-30T17:53:08.372Z",
+        "reason": "incumbent input hover border already in theme.css v3"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#9da3b0",
+        "createdAt": "2026-08-30T17:53:08.406Z",
+        "reason": "incumbent placeholder color already in theme.css v3"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "16px",
+        "createdAt": "2026-08-30T17:53:08.439Z",
+        "reason": "incumbent appbar title / btn-lg size already in theme.css v3"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "14px",
+        "createdAt": "2026-08-30T17:53:08.473Z",
+        "reason": "incumbent kv / timeline size already in theme.css v3"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "13.5px",
+        "createdAt": "2026-08-30T17:53:08.507Z",
+        "reason": "incumbent tab / alert size already in theme.css v3"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "12.5px",
+        "createdAt": "2026-08-30T17:53:08.541Z",
+        "reason": "incumbent caption / desc size already in theme.css v3"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11px",
+        "createdAt": "2026-08-30T17:53:08.575Z",
+        "reason": "incumbent tabbar label size already in theme.css v3"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "20px",
+        "createdAt": "2026-08-30T17:53:20.385Z",
+        "reason": "incumbent kv.total value size already in theme.css v3"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "3px",
+        "createdAt": "2026-08-30T17:53:20.417Z",
+        "reason": "incumbent instalment tick radius already in theme.css v3"
+      }
+    ]
+  }
+}

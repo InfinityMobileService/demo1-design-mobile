@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>รายการที่ต้องชำระ — บ้านมือถือ MBH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+<!--
+THESIS: แอปหนี้ที่อ่านออกกลางแดดในแวบเดียว — มาตรฐานแอปการเงินไทยที่ทำให้เนี้ยบระดับ KPLUS/Revolut ปฏิเสธการ์ดเงาซ้อนการ์ดและลูกเล่นที่ทำให้ตัวเลขอ่านช้าลง
+OWN-WORLD: พื้นเทา #F1F2F5 การ์ดขาวเงาบาง เส้น 1px ทอง #D2A32C เป็น accent เดียวของระบบ แดง/เขียวสงวนไว้สื่อสถานะเท่านั้น Prompt ตัวเลข tabular ปุ่มสูง 52px มุม 14-18px
+STORY: ลูกค้าที่ค้างงวดเปิดแอป เห็นยอด ฿3,400 กับวันครบกำหนดก่อนอย่างอื่น เข้าใจว่าค่าติดตาม ฿200 มาจากไหน แล้วกดจ่ายหรือแจ้งสลิปได้ใน 1 แตะ
+FIRST VIEWPORT: แถบสถานะค้างชำระหนึ่งบรรทัด แล้วแผงยอดขาวเต็มความกว้าง ยอด ฿3,400 ที่ 34px คือตัวใหญ่ที่สุดในหน้า ใต้ยอดเป็นแถบ 12 ขีดของ 12 งวด ปิดท้ายด้วยปุ่มชำระเงินคู่แจ้งสลิป
+FORM: canon (มาตรฐานหมวด ผู้ใช้เลือกเอง) นอกลิสต์ผู้สมัครทั้ง 7 · seed 402bb3ea
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<div class="app">
+<script>window.PAGE = { title: "บ้านมือถือ MBH", back: "home.html", right: [{ ico: "refresh-cw", href: "due-list.html" }] };</script>
+<script src="assets/layout.js"></script>
+<div class="screen">
+
+  <a class="notice" href="collection-detail.html">
+    <i data-lucide="circle-alert"></i>
+    <span class="flex-1">ค้างชำระเกินกำหนด 26 วัน · ระยะที่ 1</span>
+    <i data-lucide="chevron-right"></i>
+  </a>
+
+  <div class="connect">
+    <div class="connect-head">
+      <div class="card">
+        <a class="row gap-12" href="profile.html">
+          <span class="device-thumb"><img src="assets/logo.jpg" alt="บ้านมือถือ MBH"></span>
+          <div class="flex-1">
+            <div class="h3">นายสมชาย ใจดี</div>
+            <div class="sub">LN-2568-0417 · 081-234-5678</div>
+          </div>
+          <i data-lucide="chevron-right" class="chev"></i>
+        </a>
+        <div class="divider"></div>
+        <div class="row-between">
+          <div>
+            <div class="sub">ยอดชำระแล้ว</div>
+            <div class="amount-md mt-4">12,800.00</div>
+          </div>
+          <div class="text-right">
+            <div class="sub">วงเงินทั้งหมด</div>
+            <div class="amount-md mt-4">38,400.00</div>
+          </div>
+        </div>
+        <div class="progress mt-12" role="img" aria-label="ชำระแล้ว 12,800 บาท จากวงเงิน 38,400 บาท">
+          <div class="progress-bar" style="width:33%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="connect-list">
+      <div class="tabs">
+        <span class="tab active">รอเรียกเก็บ <span class="count">2</span></span>
+        <a class="tab" href="payment-history.html">เสร็จสมบูรณ์ <span class="count">4</span></a>
+      </div>
+
+      <div class="card card-flush mt-12">
+        <a class="due-row" href="collection-detail.html">
+          <div class="flex-1">
+            <div class="h3">iPhone 15 128GB</div>
+            <div class="sub">LN-2568-0417 (5/12)</div>
+            <span class="badge badge-danger mt-8">เกินกำหนด · ระยะที่ 1</span>
+          </div>
+          <div class="trail">
+            <div class="amount-sm">฿3,400</div>
+          </div>
+          <i data-lucide="chevron-right" class="chev"></i>
+        </a>
+        <a class="due-row" href="payment-schedule.html">
+          <div class="flex-1">
+            <div class="h3">iPhone 15 128GB</div>
+            <div class="sub">LN-2568-0417 (6/12)</div>
+            <span class="badge badge-warning mt-8">อีก 5 วัน</span>
+          </div>
+          <div class="trail">
+            <div class="amount-sm">฿3,200</div>
+          </div>
+          <i data-lucide="chevron-right" class="chev"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="connect-foot">
+      <a class="btn btn-outline btn-block" href="index.html">ออกจากระบบ</a>
+      <div class="session">
+        <i data-lucide="info"></i>
+        <div class="sub">เข้าสู่ระบบ 20 ส.ค. 2568 10:23 น. · เวอร์ชัน 1.0.0</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
