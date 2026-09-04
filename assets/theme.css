@@ -352,13 +352,14 @@ svg.lucide { width: 18px; height: 18px; stroke-width: 1.8; flex-shrink: 0; verti
   z-index: 25;
   display: flex;
   gap: 10px;
-  margin: 20px calc(var(--pad) * -1) calc(var(--pad) * -1);
+  margin: auto calc(var(--pad) * -1) calc(var(--pad) * -1);
   padding: 12px var(--pad) calc(12px + env(safe-area-inset-bottom));
   background: var(--surface);
   border-top: 1px solid var(--line);
 }
 .action-bar .btn { flex: 1; }
 .action-bar .btn-icon { flex: 0 0 52px; padding: 0; }
+.app > .action-bar { margin: 0; flex-shrink: 0; }
 
 /* ==========================================================================
    Badge / chip / tabs
@@ -510,6 +511,26 @@ svg.lucide { width: 18px; height: 18px; stroke-width: 1.8; flex-shrink: 0; verti
   text-align: right;
 }
 .due-row .chev { align-self: center; }
+
+.show-all-toggle { display: none; }
+.list-more-wrap { display: none; }
+.show-all-toggle:checked + .card .list-more-wrap { display: block; }
+.list-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--gold-ink);
+  box-shadow: inset 0 1px 0 var(--line-soft);
+  cursor: pointer;
+}
+.list-more-close { display: none; }
+.show-all-toggle:checked + .card .list-more-open { display: none; }
+.show-all-toggle:checked + .card .list-more-close { display: flex; }
 
 /* key-value */
 .kv {
@@ -794,6 +815,15 @@ svg.lucide { width: 18px; height: 18px; stroke-width: 1.8; flex-shrink: 0; verti
 }
 .avatar-lg { width: 64px; height: 64px; font-size: 21px; }
 
+.brand-mark {
+  display: block;
+  width: 160px;
+  max-width: 160px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--r-lg);
+}
+
 .qr-box {
   display: flex;
   align-items: center;
@@ -886,9 +916,17 @@ svg.lucide { width: 18px; height: 18px; stroke-width: 1.8; flex-shrink: 0; verti
 .t-warning { color: var(--warning); }
 .t-gold { color: var(--gold-ink); }
 
-a.card { transition: background .16s var(--ease); }
-a.card:hover { background: var(--surface-2); }
-a.card:active { background: var(--surface-3); }
+a.card, button.card { transition: background .16s var(--ease); }
+a.card:hover, button.card:hover { background: var(--surface-2); }
+a.card:active, button.card:active { background: var(--surface-3); }
+button.card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.card .copy-status { flex-shrink: 0; color: var(--ink-3); }
+.card.is-copied .copy-status { color: var(--success); }
 
 @media (max-width: 359px) {
   .due-row { flex-wrap: wrap; }

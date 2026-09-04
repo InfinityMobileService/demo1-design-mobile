@@ -42,7 +42,7 @@ MBH ปล่อยสินเชื่อเช่าซื้อมือถ�
 
 - `home` `due-list` `collection-detail` `payment-schedule` `payment-history`
 - `pay-methods` `pay-qr` `pay-success` `pay-slip` `slip-status`
-- `profile` (+ `index.html` เป็น hub รวมลิงก์สำหรับ preview)
+- `profile` · `index.html` เป็นหน้าเข้าสู่ระบบ (ชื่อ-นามสกุล · เบอร์โทร · เลขบัตรประชาชน) แล้วไป `home.html`
 
 ข้อจำกัดทางเทคนิคที่ผูกมัด:
 - **static HTML mockup ล้วน ห้ามเรียก/เขียน API ห้ามใส่ JS logic** — ปุ่มทำงานได้แค่ลิงก์เปลี่ยนหน้า
@@ -50,7 +50,7 @@ MBH ปล่อยสินเชื่อเช่าซื้อมือถ�
 - CSS ทั้งหมดอยู่ใน `assets/theme.css` ที่เดียว, shell (app bar) มาจาก `assets/layout.js` ผ่าน `window.PAGE`
 - ไอคอนใช้ Lucide เท่านั้น ห้าม emoji · ฟอนต์ Prompt
 - **ไม่มีแท็บล่าง** — หน้าแรกเป็นจอเดียวแบบ CUSTOMER CONNECT (การ์ดสัญญา · ยอดชำระแล้ว/วงเงิน · แท็บรอเรียกเก็บ/เสร็จสมบูรณ์ · ออกจากระบบ) เมนูตั้งค่าถูกตัด
-- ไม่มีหน้า login/OTP แล้ว จุดเข้าคือ `index.html` หรือ `home.html`
+- จุดเข้าคือ `index.html` (เข้าสู่ระบบด้วยชื่อ เบอร์ เลขบัตรตามสัญญา ไม่มีรหัสผ่าน/OTP) แล้วไป `home.html`
 
 **ยังไม่ตัดสิน:** จะพัฒนาเป็นแอปจริงด้วย stack ไหน (React Native / Flutter / PWA) — งานรอบนี้จบที่ mockup เพื่อ confirm design เท่านั้น
 

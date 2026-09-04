@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-20T16:23:01.439Z",
+  "generatedAt": "2026-09-04T14:57:00.000Z",
   "title": "Design System: MBH Customer App",
   "extensions": {
     "colorMeta": {
@@ -402,7 +402,7 @@
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Page-level statement inside a screen body, e.g. a payment confirmation."
+        "purpose": "Page-level statement inside a screen body — a payment confirmation, or the identity-gate title when there is no app bar."
       },
       "title": {
         "displayName": "Title",
@@ -564,9 +564,17 @@
       "name": "Balance Panel",
       "kind": "custom",
       "refersTo": "balance-panel",
-      "description": "The signature component: one per page, the only surface allowed the panel lift, holding the only oversized number on the page.",
+      "description": "The signature component: one per ledger page, the only surface allowed the panel lift, holding the only oversized number on the page. The identity gate has none.",
       "html": "<div class=\"ds-balance\"><div class=\"ds-balance-head\"><span class=\"ds-balance-label\">ยอดที่ต้องชำระตอนนี้</span><span class=\"ds-badge ds-badge-danger\">เกินกำหนด</span></div><div class=\"ds-amount-xl\"><span class=\"ds-baht\">฿</span>3,400</div><div class=\"ds-balance-meta\">งวดที่ 5 · ครบกำหนด 25 ก.ค. 2568</div><div class=\"ds-kv\"><span class=\"ds-k\">ค่างวด</span><span class=\"ds-v\">฿3,200</span></div><div class=\"ds-kv\"><span class=\"ds-k\">ค่าติดตามทวงถาม</span><span class=\"ds-v\">฿200</span></div></div>",
       "css": ".ds-balance { font-family: \"Prompt\",\"Noto Sans Thai\",-apple-system,BlinkMacSystemFont,sans-serif; font-variant-numeric: tabular-nums lining-nums; color: #0F1115; background: #FFFFFF; border-radius: 18px; padding: 20px 18px 18px; box-shadow: 0 2px 4px rgba(15,17,21,.05), 0 8px 20px rgba(15,17,21,.06); } .ds-balance-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; } .ds-balance-label { font-size: 13px; color: #646A79; } .ds-amount-xl { margin-top: 6px; font-size: 34px; font-weight: 700; letter-spacing: -.01em; line-height: 1.15; animation: ds-rise .5s cubic-bezier(.2,.8,.25,1) both; } .ds-baht { margin-right: .06em; } @keyframes ds-rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } } @media (prefers-reduced-motion: reduce) { .ds-amount-xl { animation: none; } } .ds-balance-meta { margin-top: 8px; font-size: 13px; color: #55596A; } .ds-kv { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 10px 0; font-size: 14px; } .ds-kv + .ds-kv { box-shadow: inset 0 1px 0 #EFF1F4; } .ds-kv .ds-k { flex-shrink: 0; color: #646A79; } .ds-kv .ds-v { font-weight: 500; text-align: right; } .ds-badge { display: inline-flex; align-items: center; gap: 5px; height: 22px; padding: 0 9px; border-radius: 8px; font-size: 12px; font-weight: 600; white-space: nowrap; } .ds-badge-danger { background: #FCEAE8; color: #C42F26; }"
+    },
+    {
+      "name": "Brand Mark",
+      "kind": "custom",
+      "refersTo": "brand-mark",
+      "description": "The 160×104 photographic lockup on the identity gate. Centered, 18px corners. A photograph, not a gold fill. Used once, on index.html.",
+      "html": "<div class=\"ds-brand-mark\" role=\"img\" aria-label=\"บ้านมือถือ MBH\"></div>",
+      "css": ".ds-brand-mark { display: block; width: 160px; max-width: 160px; height: 104px; margin: 0 auto; border-radius: 18px; background: #EDEFF3; box-shadow: inset 0 0 0 1px #E3E5EA; }"
     },
     {
       "name": "Instalment Ticks",
@@ -627,15 +635,16 @@
   ],
   "narrative": {
     "northStar": "The Daylight Ledger",
-    "overview": "This is a debt app for people who open it worried. Its whole job is to be legible in a hurry, in sunlight, on the one phone the customer is still paying off — so the system is built as a ledger, not as a brand experience. A page is a sheet of light grey with white panels laid on it, and on every page exactly one number is bigger than everything else: the amount due. Everything else in the system exists to keep that number unambiguous and to put a payable action within one thumb-reach of it.\n\nThe visual direction is canon, chosen deliberately. This is the Thai banking-app category played straight — the shared grammar of SCB EASY, KPLUS, KMA, Krungsri เฟิร์สต์ชอยส์, tplus, TrueMoney and เป๋าตัง — executed to the craft standard of Revolut, Wise and Monzo. It is not an own-world, and future work must not smuggle one in. The value here is recognisability: a customer who has used any Thai banking app should not have to learn this one. Every impulse toward a signature device should be spent instead on making the standard components sharper, quieter and faster to read.\n\nThe two anti-references are explicit and confirmed: no card stacked on a shadowed card, and no ornament that slows a number down. Depth is used to say 'this is the one thing on the page', never to decorate. The palette is one accent and one accent only — MBH gold — over white and grey, with red, green, amber and blue held in reserve as status vocabulary that never gets borrowed for decoration.",
+    "overview": "This is a debt app for people who open it worried. Its whole job is to be legible in a hurry, in sunlight, on the one phone the customer is still paying off — so the system is built as a ledger, not as a brand experience. A page is a sheet of light grey with white panels laid on it, and on every ledger page exactly one number is bigger than everything else: the amount due. The identity gate is the exception: no amount, only the photographic lockup and the three contract fields. Everything else in the system exists to keep that number unambiguous and to put a payable action within one thumb-reach of it.\n\nThe visual direction is canon, chosen deliberately. This is the Thai banking-app category played straight — the shared grammar of SCB EASY, KPLUS, KMA, Krungsri เฟิร์สต์ชอยส์, tplus, TrueMoney and เป๋าตัง — executed to the craft standard of Revolut, Wise and Monzo. It is not an own-world, and future work must not smuggle one in. The value here is recognisability: a customer who has used any Thai banking app should not have to learn this one. Every impulse toward a signature device should be spent instead on making the standard components sharper, quieter and faster to read.\n\nThe two anti-references are explicit and confirmed: no card stacked on a shadowed card, and no ornament that slows a number down. Depth is used to say 'this is the one thing on the page', never to decorate. The palette is one accent and one accent only — MBH gold — over white and grey, with red, green, amber and blue held in reserve as status vocabulary that never gets borrowed for decoration.",
     "keyCharacteristics": [
       "Light-grey ground (#F1F2F5), white panels, hairline #E3E5EA borders, shadows so faint they read as separation rather than lift",
       "Exactly one gold accent (#D2A32C) carrying exactly three jobs, and never status",
-      "One oversized tabular number (34px) per page, wrapped in a single lifted white panel",
+      "One oversized tabular number (34px) per ledger page, wrapped in a single lifted white panel; the identity gate has no amount",
       "Every ink level clears 4.5:1 on both the white surface and the grey page",
       "52px controls, 14–18px radii, 16px page gutter, 420px shell",
       "Thai-only UI, Lucide icons only, one stylesheet, one shell script, no runtime network calls for icons",
-      "One authored motion moment in the entire product, disabled under prefers-reduced-motion"
+      "One authored motion moment in the entire product, disabled under prefers-reduced-motion",
+      "Identity gate (index.html) is a bare screen: 160px photographic brand mark, three contract fields on the grey page, gold button in the screen flow"
     ],
     "rules": [
       {
@@ -655,7 +664,7 @@
       },
       {
         "name": "The One Big Number Rule",
-        "body": "Exactly one .amount-xl per page, and it lives inside the page's single .balance panel. Every one of the eleven customer pages obeys this. A second oversized figure does not create emphasis, it destroys it — step down to .amount-lg or a .kv.total row instead.",
+        "body": "Exactly one .amount-xl per ledger page, and it lives inside the page's single .balance panel. The eleven customer pages after the identity gate obey this. The identity gate (index.html) carries no amount. A second oversized figure does not create emphasis, it destroys it — step down to .amount-lg or a .kv.total row instead.",
         "section": "typography"
       },
       {
@@ -671,6 +680,11 @@
       {
         "name": "The One Column Rule",
         "body": "The layout is one column. The only sanctioned horizontal splits are the 2-up .grid-2 / .stats (equal halves, 10px gap) and a leading-icon / body / trailing-value row. Nothing else divides the width.",
+        "section": "layout"
+      },
+      {
+        "name": "The Bare Gate Rule",
+        "body": "The identity gate is a bare screen. No app bar, no card around the form, no .action-bar. Fields sit on --page. The photographic brand mark and the in-flow gold button are the only chrome.",
         "section": "layout"
       },
       {
@@ -695,12 +709,13 @@
       }
     ],
     "dos": [
-      "Do give every page exactly one .balance panel holding exactly one .amount-xl, and put the payment action inside that panel.",
+      "Do keep the home screen to the Connect skeleton: identity card, paid/limit, in-page tabs, one due row, log out. Do not reintroduce a bottom tab bar or a settings menu list.",
       "Do wrap the currency sign as <span class=\"baht\">฿</span> inside .amount-xl and .amount-lg.",
       "Do pair every status colour with a Thai word — เกินกำหนด, สำเร็จ, รอตรวจสอบ — and give any colour-only graphic a role=\"img\" with a full Thai aria-label.",
       "Do keep gold to its three jobs: brand accent, primary action, inline link.",
       "Do check any new text colour against both #FFFFFF and #F1F2F5 at 4.5:1 before adding it.",
-      "Do declare the shell through window.PAGE and let assets/layout.js render the app bar and tab bar.",
+      "Do declare the shell through window.PAGE and let assets/layout.js render the app bar; set bare: true on the identity gate and pay-success.",
+      "Do use .brand-mark for the 160px photographic lockup on the identity gate; do not redraw the logo or fill it with gold.",
       "Do put every style in assets/theme.css; there is no second stylesheet and no <style> block on any page.",
       "Do right-align amounts in a .trail or .kv .v column so tabular figures line up down the page.",
       "Do separate rows inside a list with the inset --line-soft hairline instead of a margin.",
@@ -715,6 +730,8 @@
       "Don't apply white-space: nowrap to a Thai phrase; Thai breaks mid-phrase and the layout must survive it at 430px.",
       "Don't add a second animation. There is one authored motion moment in the product — rise, 500ms, on the balance panel's amount — and everything else is state feedback at 120–180ms on cubic-bezier(.2,.8,.25,1). All of it is switched off under prefers-reduced-motion.",
       "Don't rely on hover to reveal anything; the target is a thumb on a phone.",
+      "Don't add a password or OTP field to the identity gate; entry is name, phone, and national ID as written on the branch contract.",
+      "Don't wrap identity-gate fields in a card or park the submit in an .action-bar — they sit on --page, button in flow.",
       "Don't add a runtime network dependency — icons are vendored and pinned, and the select chevron is an inline data URI.",
       "Don't widen the column or reflow for desktop; above 480px the design becomes a framed phone, not a wide layout.",
       "Don't use emoji or a non-Lucide icon, and don't let an icon carry a meaning by itself."

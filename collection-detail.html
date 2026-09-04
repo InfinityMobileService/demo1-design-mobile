@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>รายละเอียดการทวงถาม — บ้านมือถือ MBH</title>
+<title>อัปโหลดสลิป — บ้านมือถือ MBH</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,146 +19,82 @@ FORM: canon (มาตรฐานหมวด ผู้ใช้เลือก
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 <div class="app">
-<script>window.PAGE = { title: "รายละเอียดการทวงถาม", back: "home.html" };</script>
+<script>window.PAGE = { title: "อัปโหลดสลิป", back: "home.html" };</script>
 <script src="assets/layout.js"></script>
 <div class="screen">
 
-  <div class="notice">
-    <i data-lucide="circle-alert"></i>
-    <span class="flex-1">ค้างชำระเกินกำหนด 26 วัน · ระยะที่ 1</span>
-    <i data-lucide="chevron-right"></i>
-  </div>
-
-  <div class="balance mt-12">
-    <div class="row-between">
-      <div class="label">ยอดที่ต้องชำระตอนนี้</div>
-      <span class="badge badge-danger">เกินกำหนด</span>
-    </div>
-    <div class="amount-xl"><span class="baht">฿</span>3,400</div>
-    <div class="meta">งวดที่ 5 · ครบกำหนด 25 ก.ค. 2568 · ค้าง 26 วัน</div>
-
-    <div class="ticks mt-16" role="img" aria-label="ชำระแล้ว 4 งวด ค้าง 1 งวด งวดถัดไป 1 งวด เหลืออีก 6 งวด จากทั้งหมด 12 งวด">
-      <span class="tick paid"></span>
-      <span class="tick paid"></span>
-      <span class="tick paid"></span>
-      <span class="tick paid"></span>
-      <span class="tick overdue"></span>
-      <span class="tick due"></span>
-      <span class="tick"></span>
-      <span class="tick"></span>
-      <span class="tick"></span>
-      <span class="tick"></span>
-      <span class="tick"></span>
-      <span class="tick"></span>
-    </div>
-    <div class="row-between sub mt-8">
-      <span>ชำระแล้ว 4 / 12 งวด</span>
-      <span>คงเหลือ ฿25,600</span>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="kv">
-      <span class="k">ค่างวด</span>
-      <span class="v">฿3,200</span>
-    </div>
-    <div class="kv">
-      <span class="k">ค่าติดตามทวงถาม</span>
-      <span class="v">฿200</span>
-    </div>
-    <div class="kv">
-      <span class="k">ระยะทวงถาม</span>
-      <span class="v">ระยะที่ 1 · ค้าง 1–30 วัน</span>
-    </div>
-  </div>
-
-  <div class="section-title">สัญญาที่เกี่ยวข้อง</div>
   <div class="card">
-    <div class="row gap-12">
-      <span class="device-thumb"><i data-lucide="smartphone"></i></span>
-      <div class="flex-1">
-        <div class="h3">iPhone 15 128GB สีดำ</div>
-        <div class="sub">LN-2568-0417 · IMEI 356789104523781</div>
-      </div>
-    </div>
-
-
-    <div class="divider"></div>
-    <div class="kv">
-      <span class="k">ยอดจัดทั้งหมด</span>
-      <span class="v">฿38,400</span>
-    </div>
-    <div class="kv">
-      <span class="k">ชำระแล้ว</span>
-      <span class="v t-success">฿12,800</span>
-    </div>
-    <div class="kv">
-      <span class="k">งวดถัดไป</span>
-      <span class="v">งวดที่ 6 · 25 ส.ค. 2568 · ฿3,200</span>
-    </div>
+    <div class="h3">งวดที่ 5</div>
+    <div class="sub">ครบกำหนด 25 ก.ค. 2568</div>
+    <div class="amount-lg mt-12"><span class="baht">฿</span>3,400</div>
   </div>
 
-  <div class="section-title">ขั้นตอนการทวงถาม</div>
-  <div class="list">
-    <div class="list-item">
-      <span class="list-ico r"><i data-lucide="message-square-warning"></i></span>
-      <div class="body">
-        <div class="title">ระยะที่ 1 · ค้าง 1–30 วัน</div>
-        <div class="desc"><span class="strong">กำลังดำเนินการ</span> · SMS + โทรแจ้งเตือน · ค่าติดตาม ฿200</div>
-      </div>
-      <span class="badge badge-danger">ปัจจุบัน</span>
+  <div class="section-title">บัญชีรับโอน</div>
+  <button type="button" class="card" data-copy="123 456 7890" aria-label="คัดลอกบัญชีกสิกรไทย 123 456 7890">
+    <div class="h3">กสิกรไทย</div>
+    <div class="sub">บจก. บ้านมือถือ โมบายโฮม</div>
+    <div class="row-between mt-12">
+      <div class="amount-lg">123 456 7890</div>
+      <span class="copy-status sub"><i data-lucide="copy"></i> คัดลอก</span>
     </div>
-    <div class="list-item">
-      <span class="list-ico y"><i data-lucide="mail-warning"></i></span>
-      <div class="body">
-        <div class="title">ระยะที่ 2 · ค้าง 31–60 วัน</div>
-        <div class="desc">จดหมายแจ้งเตือน + เจ้าหน้าที่เข้าพบ · ค่าติดตาม ฿500</div>
-      </div>
-      <span class="badge badge-warning">ถัดไป</span>
+  </button>
+  <button type="button" class="card" data-copy="456 789 0123" aria-label="คัดลอกบัญชีไทยพาณิชย์ 456 789 0123">
+    <div class="h3">ไทยพาณิชย์</div>
+    <div class="sub">บจก. บ้านมือถือ โมบายโฮม</div>
+    <div class="row-between mt-12">
+      <div class="amount-lg">456 789 0123</div>
+      <span class="copy-status sub"><i data-lucide="copy"></i> คัดลอก</span>
     </div>
-    <div class="list-item">
-      <span class="list-ico r"><i data-lucide="lock-keyhole"></i></span>
-      <div class="body">
-        <div class="title">ระยะที่ 3 · เกิน 60 วัน</div>
-        <div class="desc">ล็อกเครื่อง / เรียกคืนเครื่องตามสัญญา</div>
-      </div>
-      <span class="badge badge-danger">ผลกระทบสูง</span>
-    </div>
-  </div>
+  </button>
 
-  <div class="section-title">ประวัติการติดต่อทวงถาม</div>
-  <div class="card">
-    <div class="timeline">
-      <div class="tl-item done">
-        <div class="tl-title">SMS แจ้งครบกำหนด</div>
-        <div class="tl-meta">26 ก.ค. 2568 · แจ้งงวดที่ 5 ครบกำหนด</div>
-      </div>
-      <div class="tl-item done">
-        <div class="tl-title">โทรแจ้ง</div>
-        <div class="tl-meta">2 ส.ค. 2568 · รับสาย รับปากจ่าย 10 ส.ค. 2568</div>
-      </div>
-      <div class="tl-item done">
-        <div class="tl-title">SMS เตือนซ้ำ</div>
-        <div class="tl-meta">12 ส.ค. 2568 · แจ้งยอดค้างชำระ</div>
-      </div>
-      <div class="tl-item active">
-        <div class="tl-title">โทรแจ้ง</div>
-        <div class="tl-meta">18 ส.ค. 2568 · ไม่รับสาย</div>
-      </div>
-    </div>
-  </div>
+  <div class="section-title">หลักฐานสลิป</div>
 
-  <div class="alert alert-info mt-16">
-    <i data-lucide="file-check-2"></i>
-    <div>สลิปที่แจ้งเมื่อ 19 ส.ค. 2568 14:22 · ฿3,400 อยู่ระหว่างตรวจสอบ <a href="slip-status.html">ดูสถานะ</a></div>
-  </div>
-
-  <div class="action-bar">
-    <a class="btn btn-primary" href="pay-methods.html"><i data-lucide="wallet"></i>ชำระเลย</a>
-    <a class="btn btn-outline" href="pay-slip.html"><i data-lucide="upload"></i>โอนแล้ว แจ้งสลิป</a>
+  <div class="upload-box">
+    <i data-lucide="image-plus"></i>
+    <div>แตะเพื่ออัปโหลดสลิป</div>
+    <div class="hint">รองรับ JPG, PNG ขนาดไม่เกิน 5 MB</div>
   </div>
 
 </div>
+<div class="action-bar">
+  <a class="btn btn-primary" href="slip-status.html">
+    <i data-lucide="send"></i> ส่งสลิป
+  </a>
 </div>
+</div>
+<script>
+function copyText(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text).catch(function () { return copyFallback(text); });
+  }
+  return copyFallback(text);
+}
+function copyFallback(text) {
+  var ta = document.createElement("textarea");
+  ta.value = text;
+  ta.setAttribute("readonly", "");
+  ta.style.cssText = "position:fixed;left:-9999px";
+  document.body.appendChild(ta);
+  ta.select();
+  var ok = document.execCommand("copy");
+  ta.remove();
+  return ok ? Promise.resolve() : Promise.reject();
+}
+document.querySelectorAll("[data-copy]").forEach(function (el) {
+  el.addEventListener("click", function () {
+    copyText(el.getAttribute("data-copy")).then(function () {
+      el.classList.add("is-copied");
+      var status = el.querySelector(".copy-status");
+      status.innerHTML = '<i data-lucide="check"></i> คัดลอกแล้ว';
+      if (window.lucide) lucide.createIcons();
+      setTimeout(function () {
+        el.classList.remove("is-copied");
+        status.innerHTML = '<i data-lucide="copy"></i> คัดลอก';
+        if (window.lucide) lucide.createIcons();
+      }, 1600);
+    });
+  });
+});
+</script>
 </body>
 </html>

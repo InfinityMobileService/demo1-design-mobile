@@ -198,6 +198,10 @@ components:
     textColor: "{colors.danger}"
     rounded: "{rounded.md}"
     padding: "13px 14px"
+  brand-mark:
+    width: "160px"
+    height: "104px"
+    rounded: "{rounded.lg}"
 ---
 
 # Design System: MBH Customer App
@@ -206,7 +210,7 @@ components:
 
 **Creative North Star: "The Daylight Ledger"**
 
-This is a debt app for people who open it worried. Its whole job is to be legible in a hurry, in sunlight, on the one phone the customer is still paying off — so the system is built as a ledger, not as a brand experience. A page is a sheet of light grey with white panels laid on it, and on every page exactly one number is bigger than everything else: the amount due. Everything else in the system exists to keep that number unambiguous and to put a payable action within one thumb-reach of it.
+This is a debt app for people who open it worried. Its whole job is to be legible in a hurry, in sunlight, on the one phone the customer is still paying off — so the system is built as a ledger, not as a brand experience. A page is a sheet of light grey with white panels laid on it, and on every ledger page exactly one number is bigger than everything else: the amount due. The identity gate is the exception: no amount, only the photographic lockup and the three contract fields. Everything else in the system exists to keep that number unambiguous and to put a payable action within one thumb-reach of it.
 
 The visual direction is **canon, chosen deliberately**. This is the Thai banking-app category played straight — the shared grammar of SCB EASY, KPLUS, KMA, Krungsri เฟิร์สต์ชอยส์, tplus, TrueMoney and เป๋าตัง — executed to the craft standard of Revolut, Wise and Monzo. It is *not* an own-world, and future work must not smuggle one in. The value here is recognisability: a customer who has used any Thai banking app should not have to learn this one. Every impulse toward a signature device (a gradient hero, a glassy card, a custom illustration language, a novel navigation model) should be spent instead on making the standard components sharper, quieter and faster to read.
 
@@ -215,11 +219,12 @@ The two anti-references are explicit and confirmed: **no card stacked on a shado
 **Key Characteristics:**
 - Light-grey ground (`#F1F2F5`), white panels, hairline `#E3E5EA` borders, shadows so faint they read as separation rather than lift
 - Exactly one gold accent (`#D2A32C`) carrying exactly three jobs, and never status
-- One oversized tabular number (34px) per page, wrapped in a single lifted white panel
+- One oversized tabular number (34px) per ledger page, wrapped in a single lifted white panel; the identity gate has no amount
 - Every ink level clears 4.5:1 on *both* the white surface and the grey page
 - 52px controls, 14–18px radii, 16px page gutter, 420px shell
 - Thai-only UI, Lucide icons only, one stylesheet, one shell script, no runtime network calls for icons
 - One authored motion moment in the entire product, disabled under `prefers-reduced-motion`
+- Identity gate (`index.html`) is a bare screen: 160px photographic brand mark, three contract fields on the grey page, gold button in the screen flow
 
 ## Colors
 
@@ -265,7 +270,7 @@ Four fixed pairs, foreground plus a tinted background, used for badges, alerts, 
 
 ### Hierarchy
 - **Display / Amount XL** (700, 34px, 1.15, `-0.01em`): the single largest thing on a page — the amount due, inside the balance panel. One per page, no exceptions.
-- **Headline** (700, 21px, 1.3, `-0.02em`): page-level statements inside a screen body (`.h1`), such as a success confirmation.
+- **Headline** (700, 21px, 1.3, `-0.02em`): page-level statements inside a screen body (`.h1`) — a success confirmation, or the identity-gate title when there is no app bar.
 - **Title** (600, 17px, 1.35, `-0.01em`): panel and section headings (`.h2`); also the size of `.amount-md`, the secondary figure in a two-up comparison.
 - **Sub-title** (600, 15px, 1.4): in-card headings (`.h3`), the device name, the choice-row title.
 - **Body** (400, 15px, 1.5): default. App bar title is the same size at 600.
@@ -276,7 +281,7 @@ Four fixed pairs, foreground plus a tinted background, used for badges, alerts, 
 
 ### Named Rules
 
-**The One Big Number Rule.** Exactly one `.amount-xl` per page, and it lives inside the page's single `.balance` panel. Every one of the eleven customer pages obeys this. A second oversized figure does not create emphasis, it destroys it — step down to `.amount-lg` or a `.kv.total` row instead.
+**The One Big Number Rule.** Exactly one `.amount-xl` per ledger page, and it lives inside the page's single `.balance` panel. The eleven customer pages after the identity gate obey this. The identity gate (`index.html`) carries no amount. A second oversized figure does not create emphasis, it destroys it — step down to `.amount-lg` or a `.kv.total` row instead.
 
 **The Baht Sidebearing Rule.** At 700 weight, Prompt's ฿ has a right sidebearing narrow enough to collide with the leading digit. Wrap the sign — `<span class="baht">฿</span>3,400` — inside `.amount-xl` and `.amount-lg`. The `.06em` correction lives on the glyph, never on the line's letter-spacing, so the digits keep their tabular rhythm.
 
@@ -284,7 +289,7 @@ Four fixed pairs, foreground plus a tinted background, used for badges, alerts, 
 
 ## Layout
 
-A single 420px column (`.app`), centred, `min-height: 100dvh`, filled with `--page` and clipped. Vertically it is three fixed parts: a 56px sticky app bar at the top, a scrolling `.screen`, and — on the four tabbed pages — a 60px sticky bottom tab bar. Both bars are white with a 1px `--line` edge, and the tab bar carries `env(safe-area-inset-bottom)`.
+A single 420px column (`.app`), centred, `min-height: 100dvh`, filled with `--page` and clipped. Vertically it is three fixed parts: a 56px sticky app bar at the top, a scrolling `.screen`, and — on the four tabbed pages — a 60px sticky bottom tab bar. Both bars are white with a 1px `--line` edge, and the tab bar carries `env(safe-area-inset-bottom)`. A `bare: true` page skips the app bar: the identity gate (`index.html`) and pay-success. The identity gate also has no tab bar and no sticky `.action-bar` — the gold submit sits in the screen flow under the fields.
 
 The screen's gutter is 16px (`--pad`), with 16px of top padding and 28px at the bottom; when a tab bar is present the bottom padding grows by the bar's height. Two patterns break the gutter deliberately by negating it: the horizontally-scrolling `.chip-row` and the sticky `.action-bar`, both of which run edge-to-edge while their content stays on the 16px rhythm.
 
@@ -295,6 +300,8 @@ There is exactly one breakpoint, and it is not a layout change: at `min-width: 4
 Density is thumb-first: 52px primary controls, 40px icon buttons, a 62px minimum list-row height, 44–52px inputs, 36px chips.
 
 **The One Column Rule.** The layout is one column. The only sanctioned horizontal splits are the 2-up `.grid-2` / `.stats` (equal halves, 10px gap) and a leading-icon / body / trailing-value row. Nothing else divides the width.
+
+**The Bare Gate Rule.** The identity gate is a bare screen. No app bar, no card around the form, no `.action-bar`. Fields sit on `--page`. The photographic brand mark and the in-flow gold button are the only chrome.
 
 ## Elevation & Depth
 
@@ -330,7 +337,7 @@ Borders are 1px and hairline-coloured; the only heavier stroke is the 1.5px dash
 - **Ghost / Dark / Danger:** transparent-with-ink-2, near-black-with-white, and red-with-white respectively. Defined; the dark and danger variants are unused in the current eleven pages.
 - **Sizes:** `.btn-sm` is 38px at 13px with a 10px radius; `.btn-lg` is 56px at 16px. `.btn-block` fills the width.
 - **States:** `:active` scales to `.985` over 120ms — the only press feedback in the system, applied uniformly. Disabled drops to 40% opacity and kills pointer events.
-- **Action bar:** the sticky bottom pattern — a white 12px-padded strip with a top hairline, negatively margined to the screen edges, holding one or two `flex: 1` buttons plus an optional 52px square icon button, with safe-area padding.
+- **Action bar:** the sticky bottom pattern — a white 12px-padded strip with a top hairline, negatively margined to the screen edges, holding one or two `flex: 1` buttons plus an optional 52px square icon button, with safe-area padding. The identity gate does not use it: its primary is a `.btn-block` in the screen flow.
 
 ### Badges
 - 22px tall, 8px radius, 12px/600, icon-optional, `nowrap`. Neutral by default (`--surface-3` / `--ink-2`); the four status variants each pair a status foreground with its tinted background. Always sits beside the thing it describes, never alone.
@@ -348,7 +355,10 @@ Borders are 1px and hairline-coloured; the only heavier stroke is the 1.5px dash
 - **`.card-head`** is the standard first child: a title at 15px/600 with a trailing control on a space-between row.
 
 ### Balance Panel (signature)
-The system's one distinctive component and the reason the app works. A white 18px panel with `--sh-2`, padded 20/18/18, containing in fixed order: a 13px label row with a status badge on the right, the 34px amount, a 13px `--ink-2` meta line naming the instalment and due date, the tick strip, a two-up summary line, a divider, itemised `.kv` rows breaking the amount down (ค่างวด / ค่าติดตามทวงถาม), and the payment button pair. Every page in the app carries exactly one, adapted to that page's subject.
+The system's one distinctive component and the reason the app works. A white 18px panel with `--sh-2`, padded 20/18/18, containing in fixed order: a 13px label row with a status badge on the right, the 34px amount, a 13px `--ink-2` meta line naming the instalment and due date, the tick strip, a two-up summary line, a divider, itemised `.kv` rows breaking the amount down (ค่างวด / ค่าติดตามทวงถาม), and the payment button pair. Every ledger page carries exactly one, adapted to that page's subject. The identity gate has none.
+
+### Brand Mark (signature)
+The photographic lockup for the identity gate. `.brand-mark` is `assets/logo.jpg` at 160×104, `width: 160px`, `height: auto`, centered, 18px corners (`--r-lg`). It is a photograph, not a drawn mark and not a gold fill. Used once, on `index.html`, above the `.h1`. Elsewhere the same file sits inside a 48px `.device-thumb`, which is a row icon, not this lockup.
 
 ### Instalment Ticks (signature)
 A 26px-tall flex row of equal 3px-radius bars — one bar per instalment, twelve total, `gap: 3px`. `--line` is unpaid, `--gold-500` is paid, `--danger` is overdue, `--gold-200` is due next. It is a progress bar that refuses to average: the customer can count exactly how many instalments are done and see the overdue one sitting in the middle of the run. It must always carry `role="img"` and a Thai `aria-label` spelling out every state, because it is pure colour.
@@ -362,6 +372,7 @@ A 26px-tall flex row of equal 3px-radius bars — one bar per instalment, twelve
 
 ### Inputs / Fields
 - **Style:** white, 1px `--line`, 14px radius, 52px tall, 15px text; the textarea is the same box at `min-height: 104px`. Labels sit above at 13px/500 `--ink-2`; hints and errors sit below at 12.5px.
+- **Identity gate:** three required contract fields on `--page` — ชื่อ-นามสกุล, เบอร์โทร, เลขบัตรประชาชน — empty, placeholders only, no per-field hint, no password, no OTP. The one helper is a `.sub` under the title (`กรอกข้อมูลตามสัญญาที่สาขา ไม่ต้องตั้งรหัสผ่าน`), not a field hint.
 - **Focus:** border becomes `--gold-500` with a 3px `--gold-100` glow — the only place gold appears on an inactive control, and the reason `--gold-100` exists.
 - **Error:** `--danger` border plus a `--danger` message line; the required marker is a red asterisk beside the label.
 - **Select:** appearance stripped, with the chevron supplied as an inline data-URI SVG so no runtime request is needed.
@@ -373,7 +384,7 @@ A 26px-tall flex row of equal 3px-radius bars — one bar per instalment, twelve
 ### Navigation
 - **App bar:** sticky, 56px, white with a bottom hairline, `z-index: 30`. Layout is optional back chevron, then a flexible 16px/600 title with ellipsis overflow, then optional right-hand icon buttons. Icon buttons are 40px squares with 14px radii that fill `--surface-3` on hover; a `.has-dot` button carries an 8px `--danger` dot ringed in white.
 - **No bottom tab bar.** The customer app is one Connect-style screen. In-page tabs switch รายการรอเรียกเก็บ / รายการเสร็จสมบูรณ์. Schedule, history, and profile are not destinations in a tab bar.
-- **The app bar is injected**, never hand-written: a page declares `window.PAGE = { title, back, right, bare }` and `assets/layout.js` renders the shell and creates the icons. `back` present means a back chevron; `bare: true` means no app bar at all.
+- **The app bar is injected**, never hand-written: a page declares `window.PAGE = { title, back, right, bare }` and `assets/layout.js` renders the shell and creates the icons. `back` present means a back chevron; `bare: true` means no app bar at all. Login is `index.html` with `window.PAGE = { bare: true }` — contract identity, then `home.html`.
 
 ### Feedback
 - **`.notice`:** the top-of-page status bar — a full-width 14px-radius tinted row, icon plus one line of 13.5px/500 text plus a trailing chevron, tappable through to detail. Red (`--danger-bg`) for overdue; `.notice.pending` steps down to the amber pair, because "being reviewed" is not an alarm.
@@ -392,7 +403,8 @@ Lucide 0.544.0 only, vendored at `assets/lucide.min.js` and loaded by relative p
 - **Do** pair every status colour with a Thai word — เกินกำหนด, สำเร็จ, รอตรวจสอบ — and give any colour-only graphic a `role="img"` with a full Thai `aria-label`.
 - **Do** keep gold to its three jobs: brand accent, primary action, inline link.
 - **Do** check any new text colour against both `#FFFFFF` and `#F1F2F5` at 4.5:1 before adding it.
-- **Do** declare the shell through `window.PAGE` and let `assets/layout.js` render the app bar and tab bar.
+- **Do** declare the shell through `window.PAGE` and let `assets/layout.js` render the app bar; set `bare: true` on the identity gate and pay-success.
+- **Do** use `.brand-mark` for the 160px photographic lockup on the identity gate; do not redraw the logo or fill it with gold.
 - **Do** put every style in `assets/theme.css`; there is no second stylesheet and no `<style>` block on any page.
 - **Do** right-align amounts in a `.trail` or `.kv .v` column so tabular figures line up down the page.
 - **Do** separate rows inside a list with the inset `--line-soft` hairline instead of a margin.
@@ -407,6 +419,8 @@ Lucide 0.544.0 only, vendored at `assets/lucide.min.js` and loaded by relative p
 - **Don't** apply `white-space: nowrap` to a Thai phrase; Thai breaks mid-phrase and the layout must survive it at 430px.
 - **Don't** add a second animation. There is one authored motion moment in the product — `rise`, 500ms, on the balance panel's amount — and everything else is state feedback at 120–180ms on `cubic-bezier(.2,.8,.25,1)`. All of it is switched off under `prefers-reduced-motion`.
 - **Don't** rely on hover to reveal anything; the target is a thumb on a phone.
+- **Don't** add a password or OTP field to the identity gate; entry is name, phone, and national ID as written on the branch contract.
+- **Don't** wrap identity-gate fields in a card or park the submit in an `.action-bar` — they sit on `--page`, button in flow.
 - **Don't** add a runtime network dependency — icons are vendored and pinned, and the select chevron is an inline data URI.
 - **Don't** widen the column or reflow for desktop; above 480px the design becomes a framed phone, not a wide layout.
 - **Don't** use emoji or a non-Lucide icon, and don't let an icon carry a meaning by itself.

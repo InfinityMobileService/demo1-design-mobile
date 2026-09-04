@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MBH Customer App — รวมหน้า Mockup</title>
+<title>เข้าสู่ระบบ — บ้านมือถือ MBH</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,10 +11,10 @@
 </head>
 <body>
 <!--
-THESIS: แอปหนี้ที่อ่านออกกลางแดดในแวบเดียว — มาตรฐานแอปการเงินไทยที่ทำให้เนี้ยบระดับ KPLUS/Revolut ปฏิเสธการ์ดเงาซ้อนการ์ดและลูกเล่นที่ทำให้ตัวเลขอ่านช้าลง
+THESIS: จุดเข้าแอปหนี้คือการยืนยันตัวตนตามสัญญา ไม่ใช่รหัสผ่าน — มาตรฐานแอปการเงินไทยที่ปฏิเสธการ์ดเงาซ้อนการ์ดและลูกเล่นที่ทำให้ฟอร์มอ่านช้าลง
 OWN-WORLD: พื้นเทา #F1F2F5 การ์ดขาวเงาบาง เส้น 1px ทอง #D2A32C เป็น accent เดียวของระบบ แดง/เขียวสงวนไว้สื่อสถานะเท่านั้น Prompt ตัวเลข tabular ปุ่มสูง 52px มุม 14-18px
-STORY: ลูกค้าที่ค้างงวดเปิดแอป เห็นยอด ฿3,400 กับวันครบกำหนดก่อนอย่างอื่น เข้าใจว่าค่าติดตาม ฿200 มาจากไหน แล้วกดจ่ายหรือแจ้งสลิปได้ใน 1 แตะ
-FIRST VIEWPORT: แถบสถานะค้างชำระหนึ่งบรรทัด แล้วแผงยอดขาวเต็มความกว้าง ยอด ฿3,400 ที่ 34px คือตัวใหญ่ที่สุดในหน้า ใต้ยอดเป็นแถบ 12 ขีดของ 12 งวด ปิดท้ายด้วยปุ่มชำระเงินคู่แจ้งสลิป
+STORY: ลูกค้าเปิดแอป กรอกชื่อ-นามสกุล เบอร์โทร และเลขบัตรประชาชนตามสัญญา แล้วเข้าไปเห็นยอดค้าง
+FIRST VIEWPORT: โลโก้บ้านมือถือกลางจอ หัวข้อเข้าสู่ระบบ ฟอร์ม 3 ช่องบนพื้นเทา ปุ่มทองเข้าสู่ระบบใต้ฟอร์ม
 FORM: canon (มาตรฐานหมวด ผู้ใช้เลือกเอง) นอกลิสต์ผู้สมัครทั้ง 7 · seed 402bb3ea
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
@@ -23,75 +23,30 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <script src="assets/layout.js"></script>
 <div class="screen">
 
-  <div class="card">
-    <div class="row gap-12">
-      <span class="avatar avatar-lg"><img src="assets/logo.jpg" alt="MBH"></span>
-      <div class="flex-1">
-        <div class="h1">MBH Customer App</div>
-        <div class="sub">จอเดียวแบบ Customer Connect — ไม่มีแท็บล่าง</div>
-      </div>
-    </div>
-    <div class="divider"></div>
-    <div class="sub">จุดเข้าคือหน้าแรก หน้าอื่นเป็นรายละเอียดหรือขั้นตอนจ่ายเงิน</div>
+  <div class="text-center mt-16">
+    <img class="brand-mark" src="assets/logo.jpg" alt="บ้านมือถือ MBH" width="160" height="104">
+    <div class="h1 mt-16">เข้าสู่ระบบ</div>
+    <div class="sub">กรอกข้อมูลตามสัญญาที่สาขา ไม่ต้องตั้งรหัสผ่าน</div>
   </div>
 
-  <div class="section-title">แอป</div>
-  <div class="list">
-    <a class="list-item" href="home.html">
-      <span class="list-ico"><i data-lucide="house"></i></span>
-      <div class="body"><div class="title">หน้าแรก</div><div class="desc">home.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
-    <a class="list-item" href="payment-history.html">
-      <span class="list-ico g"><i data-lucide="receipt-text"></i></span>
-      <div class="body"><div class="title">รายการเสร็จสมบูรณ์</div><div class="desc">payment-history.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
-    <a class="list-item" href="profile.html">
-      <span class="list-ico n"><i data-lucide="user-round"></i></span>
-      <div class="body"><div class="title">บัญชี</div><div class="desc">profile.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
+  <div class="field mt-16">
+    <label for="fullname">ชื่อ-นามสกุล <span class="req">*</span></label>
+    <input id="fullname" class="input" type="text" name="fullname" autocomplete="name" placeholder="นายสมชาย ใจดี" inputmode="text">
   </div>
 
-  <div class="section-title">รายละเอียดและชำระเงิน</div>
-  <div class="list">
-    <a class="list-item" href="collection-detail.html">
-      <span class="list-ico r"><i data-lucide="triangle-alert"></i></span>
-      <div class="body"><div class="title">รายละเอียดการทวงถาม</div><div class="desc">collection-detail.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
-    <a class="list-item" href="payment-schedule.html">
-      <span class="list-ico"><i data-lucide="calendar-days"></i></span>
-      <div class="body"><div class="title">ตารางงวดผ่อน</div><div class="desc">payment-schedule.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
-    <a class="list-item" href="pay-methods.html">
-      <span class="list-ico g"><i data-lucide="wallet"></i></span>
-      <div class="body"><div class="title">เลือกช่องทางชำระ</div><div class="desc">pay-methods.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
-    <a class="list-item" href="pay-qr.html">
-      <span class="list-ico g"><i data-lucide="qr-code"></i></span>
-      <div class="body"><div class="title">QR พร้อมเพย์</div><div class="desc">pay-qr.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
-    <a class="list-item" href="pay-success.html">
-      <span class="list-ico g"><i data-lucide="circle-check-big"></i></span>
-      <div class="body"><div class="title">ชำระสำเร็จ</div><div class="desc">pay-success.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
-    <a class="list-item" href="pay-slip.html">
-      <span class="list-ico g"><i data-lucide="upload"></i></span>
-      <div class="body"><div class="title">แจ้งชำระเงิน / ส่งสลิป</div><div class="desc">pay-slip.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
-    <a class="list-item" href="slip-status.html">
-      <span class="list-ico g"><i data-lucide="clock"></i></span>
-      <div class="body"><div class="title">สถานะการแจ้งสลิป</div><div class="desc">slip-status.html</div></div>
-      <i data-lucide="chevron-right" class="chev"></i>
-    </a>
+  <div class="field">
+    <label for="phone">เบอร์โทร <span class="req">*</span></label>
+    <input id="phone" class="input" type="tel" name="phone" autocomplete="tel" inputmode="numeric" maxlength="12" placeholder="081-234-5678">
   </div>
+
+  <div class="field">
+    <label for="national-id">เลขบัตรประชาชน <span class="req">*</span></label>
+    <input id="national-id" class="input" type="text" name="nationalId" inputmode="numeric" maxlength="17" placeholder="1-2345-67890-12-3" autocomplete="off">
+  </div>
+
+  <a class="btn btn-primary btn-block mt-16" href="home.html">
+    <i data-lucide="log-in"></i> เข้าสู่ระบบ
+  </a>
 
 </div>
 </div>
